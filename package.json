@@ -1,0 +1,22 @@
+{
+  "name": "school_page",
+  "version": "1.0.0",
+  "description": "Strona szkoły (Projekt)\r ===========",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-blac1209/School_page.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alex-blac1209/School_page/issues"
+  },
+  "homepage": "https://github.com/Alex-blac1209/School_page#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
