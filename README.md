@@ -21,4 +21,4 @@
   <li>Funkcjonalność i łatwe przemieszczanie się po stronie</li>
 </ul>
   
-
+<h5>Statystyki!</h5>
