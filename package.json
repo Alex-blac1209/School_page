@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Alex-blac1209/School_page#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "twig": "^1.15.4"
   }
 }

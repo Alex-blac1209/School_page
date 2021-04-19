@@ -18,6 +18,7 @@ Strona szkoły (Projekt)
 Dodatkowe narzędzia pomocnicze:
 - bower: Zarządzanie bibliotekami frontend'u
 - npm: Zarządzanie bibliotekami backend'u
+- nodemon: Automatyczne włączanie aplikacji przy zmianie plików (dev)
 
 ### Paleta kolorów
 - Odcienie niebieskiego (kombinowanie z odcieniami pastelowymi)
@@ -39,6 +40,7 @@ Grafiki wykorzystane na stronie internetowej są bezpłatne. ([Undraw.co](https:
 
 ### Dokumentacja
 Backend Strony:
+- Twig Rendering Engine
 - JavaScript
   - MySQL
 
