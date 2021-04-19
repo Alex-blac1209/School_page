@@ -13,7 +13,7 @@ Strona szkoły (Projekt)
 - CSS
 - Javascript
   - JQuery
-  - Grafowanie ;TODO: Dopisać biblioteke
+  - Chart.js
 
 Dodatkowe narzędzia pomocnicze:
 - bower: Zarządzanie bibliotekami frontend'u
