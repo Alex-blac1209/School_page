@@ -1,0 +1,21 @@
+{
+  "name": "school_page",
+  "description": "Strona szkoły",
+  "main": "main.js",
+  "authors": [
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Alex-blac1209/School_page",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "fontawesome": "^5.15.3"
+  }
+}
