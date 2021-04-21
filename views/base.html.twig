@@ -5,32 +5,123 @@
         <title>Strona główna</title>
 
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
         {% block css %}{% endblock css %}
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Kasprzak v2.0</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <body class="preload">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Homepage</a>
-                    </li>
-                </ul>
+        {# MENU #}
+        <nav class="hidden">
+            <div class="close">
+                <i class="fas fa-window-close"></i>
+            </div>
+            <h3 class="title">Panel</h3>
+            <ul>
+                <li>
+                    <a href="/">
+                        Strona główna
+                    </a>
+                </li>
+                <li>
+                    Aktualności
+                </li>
+                <li>
+                    O Nas
+                    <ul>
+                        <li>
+                            Baza Dydaktyczna
+                        </li>
+                        <li>
+                            Partnerzy
+                        </li>
+                        <li>
+                            Projekty
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Dla Uczniów
+                    <ul>
+                        <li>
+                            Plan Lekcji
+                        </li>
+                        <li>
+                            Dzwonki
+                        </li>
+                        <li>
+                            Zajęcia Dodatkowe
+                        </li>
+                        <li>
+                            Program Wychowawczo-Profilaktyczny
+                        </li>
+                        <li>
+                            Praktyki
+                        </li>
+                        <li>
+                            Doradztwo Zawodowe
+                        </li>
+                        <li>
+                            Podręczniki
+                        </li>
+                        <li>
+                            Programy Nauczania dla Klas 1
+                        </li>
+                        <li>
+                            Przedniotowe Zasady Oceniania
+                        </li>
+                        <li>
+                            Samorząd
+                        </li>
+                        <li>
+                            Deklaracja Maturalna 2020/2021
+                        </li>
+                        <li>
+                            Wolontariat
+                        </li>
+                        <li>
+                            Szkolny Klub Łączności
+                        </li>
+                        <li>
+                            Dokumenty do Pobrania
+                        </li>
+                        <li>
+                            Regulaminy
+                        </li>
+                        <li>
+                            Pomoc Materialna
+                        </li>
+                        <li>
+                            Pomoc Psychologiczno-Pedagogiczna
+                        </li>
+                        <li>
+                            Stypendium Szkolne
+                        </li>
+                        <li>
+                            Statut
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
+
+        {# MENU BUTTON #}
+        <div class="menuButton"><i class="fas fa-bars"></i></div>
+
+        {# MAIN CONTENT #}
         <div class="container-fluid">
             {% block body %}{% endblock body %}
         </div>
 
+        {# FOOTER #}
         <footer>
             &copy; 2021 :)
         </footer>
 
+
+        {# SCRIPTS #}
+        <script src="scripts/main.js"></script>
         {% block js %}{% endblock js %}
     </body>
 </html>
