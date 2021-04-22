@@ -1,10 +1,10 @@
 // Some Configuration
 const port = 8000;
 const mysql_config = {
-    host: 'localhost',
-    user: 'school_page',
-    password: 'school_page',
-    database: 'school_page'
+    host: process.env.DATABASE_HOST || 'localhost',
+    user: process.env.DATABASE_USER || 'school_page',
+    password: process.env.DATABASE_PASSWORD || 'school_page',
+    database: process.env.DATABASE_DB || 'school_page'
 };
 
 
@@ -15,7 +15,7 @@ const express = require('express');
 // Twig rendering engine
 const Twig = require('twig');
 // MySQL driver
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 const app = express();
 app.use(express.static("public/"));
