@@ -7,8 +7,6 @@ const mysql_config = {
     database: 'school_page'
 };
 
-const MYSQL_CONNECTED = "authenticated";
-
 
 
 
@@ -30,14 +28,17 @@ app.set("twig options", {
 
 // Prepare MySQL connection
 const db = mysql.createConnection(mysql_config);
-
+var mysql_error = null;
 
 
 //////// ROUTES //////////
 
 // Homepage
 app.get("/", (request, response) => {
-    if(!db.state == MYSQL_CONNECTED) response.redirect("/debug");
+    if(!mysql_error === true) {
+        response.redirect("/debug");
+        return;
+    }
     
     response.render("main/index.html.twig");
 });
@@ -45,7 +46,7 @@ app.get("/", (request, response) => {
 // Debug Page
 app.get("/debug", (request, response) => {
     response.render("main/debug.html.twig", {
-        debug: "Hello World!",
+        debug: mysql_error,
     });
 });
 
@@ -54,8 +55,13 @@ app.get("/debug", (request, response) => {
 ///////// Run Server /////////////
 app.listen(port, () => {
     db.connect(err => {
-        if(err) return console.error("Database Connection Error: " + err.message);
-        console.log("Database connection established!");
+        if(err) {
+            mysql_error = err.message;
+            console.error("Database Connection Error: " + err.message);
+        } else {
+            console.log("Database connection established!");
+            mysql_error = true;
+        }
     });
 
     console.log(`App is running at http://0.0.0.0:${port}`);

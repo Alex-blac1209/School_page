@@ -1,5 +1,9 @@
-{% extends "base.html.twig" %}
+{% extends 'base.html.twig' %}
 
 {% block body %}
-    {{ debug }}
+    <div class='container'>
+        <h3>This is Debug Page!</h3>
+        <p>There was some error in page</p>
+        <p>{{ debug }}</p>
+    </div>
 {% endblock body %}

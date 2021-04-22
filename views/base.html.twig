@@ -6,7 +6,9 @@
 
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/shape-divider.css" />
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="styles/sideBar.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Shadows+Into+Light+Two&family=Spartan:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -14,106 +16,136 @@
     </head>
     <body class="preload">
         {# MENU #}
-        <nav class="hidden">
-            <div class="close">
-                <i class="fas fa-window-close"></i>
-            </div>
-            <h3 class="title">Panel</h3>
-            <ul>
-                <li>
-                    <a href="/">
-                        Strona główna
-                    </a>
-                </li>
-                <li>
-                    Aktualności
-                </li>
-                <li>
-                    O Nas
-                    <ul>
-                        <li>
-                            Baza Dydaktyczna
-                        </li>
-                        <li>
-                            Partnerzy
-                        </li>
-                        <li>
-                            Projekty
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Dla Uczniów
-                    <ul>
-                        <li>
-                            Plan Lekcji
-                        </li>
-                        <li>
-                            Dzwonki
-                        </li>
-                        <li>
-                            Zajęcia Dodatkowe
-                        </li>
-                        <li>
-                            Program Wychowawczo-Profilaktyczny
-                        </li>
-                        <li>
-                            Praktyki
-                        </li>
-                        <li>
-                            Doradztwo Zawodowe
-                        </li>
-                        <li>
-                            Podręczniki
-                        </li>
-                        <li>
-                            Programy Nauczania dla Klas 1
-                        </li>
-                        <li>
-                            Przedniotowe Zasady Oceniania
-                        </li>
-                        <li>
-                            Samorząd
-                        </li>
-                        <li>
-                            Deklaracja Maturalna 2020/2021
-                        </li>
-                        <li>
-                            Wolontariat
-                        </li>
-                        <li>
-                            Szkolny Klub Łączności
-                        </li>
-                        <li>
-                            Dokumenty do Pobrania
-                        </li>
-                        <li>
-                            Regulaminy
-                        </li>
-                        <li>
-                            Pomoc Materialna
-                        </li>
-                        <li>
-                            Pomoc Psychologiczno-Pedagogiczna
-                        </li>
-                        <li>
-                            Stypendium Szkolne
-                        </li>
-                        <li>
-                            Statut
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="row">
+            <nav class="hidden col-sm-12 col-md-6 col-lg-4">
+                <div class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <h3 class="title">Panel</h3>
+                <ul>
+                    <li>
+                        <a href="/">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li>
+                        Aktualności
+                    </li>
+                    <li>
+                        O Nas
+                        <ul>
+                            <li>
+                                Baza Dydaktyczna
+                            </li>
+                            <li>
+                                Partnerzy
+                            </li>
+                            <li>
+                                Projekty
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dla Uczniów
+                        <ul>
+                            <li>
+                                Plan Lekcji
+                            </li>
+                            <li>
+                                Dzwonki
+                            </li>
+                            <li>
+                                Zajęcia Dodatkowe
+                            </li>
+                            <li>
+                                Program Wychowawczo-Profilaktyczny
+                            </li>
+                            <li>
+                                Praktyki
+                            </li>
+                            <li>
+                                Doradztwo Zawodowe
+                            </li>
+                            <li>
+                                Podręczniki
+                            </li>
+                            <li>
+                                Programy Nauczania dla Klas 1
+                            </li>
+                            <li>
+                                Przedniotowe Zasady Oceniania
+                            </li>
+                            <li>
+                                Samorząd
+                            </li>
+                            <li>
+                                Deklaracja Maturalna 2020/2021
+                            </li>
+                            <li>
+                                Wolontariat
+                            </li>
+                            <li>
+                                Szkolny Klub Łączności
+                            </li>
+                            <li>
+                                Dokumenty do Pobrania
+                            </li>
+                            <li>
+                                Regulaminy
+                            </li>
+                            <li>
+                                Pomoc Materialna
+                            </li>
+                            <li>
+                                Pomoc Psychologiczno-Pedagogiczna
+                            </li>
+                            <li>
+                                Stypendium Szkolne
+                            </li>
+                            <li>
+                                Statut
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         {# MENU BUTTON #}
         <div class="menuButton"><i class="fas fa-bars"></i></div>
 
+
+        {# <div class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo_k.png" height="100px" alt="logo Kaprzaka">
+                <span>Zespół Szkół nr 36 im. Marcina Kasprzaka</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="circle nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div> #}
+
         {# MAIN CONTENT #}
-        <div class="container-fluid">
-            {% block body %}{% endblock body %}
-        </div>
+        {% block body %}{% endblock body %}
+        {# END MAIN CONTENT #}
 
         {# FOOTER #}
         <footer>
@@ -122,6 +154,8 @@
 
 
         {# SCRIPTS #}
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="scripts/main.js"></script>
         {% block js %}{% endblock js %}
     </body>
