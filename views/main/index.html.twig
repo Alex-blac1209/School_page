@@ -1,16 +1,62 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="s-nawigacja" id="nawigacja">
+        <nav class="naw">
+            <div>
+                <div class="naw_brand">
+                    <i class="fas fa-bars" id="naw-toggle"></i>
+                    <a href="#" class="logo_link"><img src="images/logo_k.png" alt="logo Kasprzaka" class="nav_logo"></a>
+                </div>
+                <div class="naw_list">
+                    <a href="" class="naw_link active">
+                        <i class="fas fa-home meh"></i>
+                        <span class="naw_name">Home</span>
+                    </a>
+                </div>
+                <div class="naw_list">
+                    <div class="naw_link c">
+                        <i class="fas fa-graduation-cap meh"></i>
+                        <span class="naw_name">School</span>
+
+                        <i class="fas fa-caret-down c_link"></i>
+                        <ul class="c_menu">
+                            <a href="#" class="c_sublink">Projects</a>
+                            <a href="#" class="c_sublink">Students</a>
+                            <a href="#" class="c_sublink">Parents</a>
+                            <a href="#" class="c_sublink">Documents</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="naw_list">
+                    <a href="" class="naw_link">
+                        <i class="fas fa-phone meh"></i>
+                        <span class="naw_name">Contact</span>
+                    </a>
+                </div>
+                <div class="naw_list">
+                    <a href="" class="naw_link">
+                        <i class="far fa-newspaper meh"></i>
+                        <span class="naw_name">News</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="banner">
-        
+       <!-- <img src="images/logo_k.png" alt="logo Kasprzaka" class="logo_k"> -->
     </div>
     <div class="informations">
-        <div class="custom-shape-divider-top-1619073593">
+        <!-- <div class="custom-shape-divider-top-1619073593">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
             </svg>
+        </div>  -->
+        <div class="custom-shape-divider-top-1619165810">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
-
         <div class="custom-shape-divider-bottom-1619073916">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>

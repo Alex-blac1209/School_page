@@ -16,7 +16,7 @@
     --default-font: 'Spartan', sans-serif;
 }
 /*********** GLOBAL **************/
-* {
+*, ::before,::after{
     box-sizing: border-box;
 }
 body, html {
@@ -63,12 +63,133 @@ a:hover {
     background-color: var(--secondary-color);
 }*/
 
+.s-nawigacja {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 92px;
+    height: 100vh;
+    background-color: var(--color_4);
+    color: var(--white);
+    padding: 1.5rem 1.5rem 2rem;
+    transition: .5s;
+    z-index: 100;
+    margin-bottom: 100%;
+    opacity: 0.9;
+}
+
+.naw {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.naw_brand {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#naw-toggle {
+    font-size: 1.25rem;
+    padding: .75rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.nav_logo{
+    height: 50px;
+    font-weight: 600;
+}
+
+.naw_link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.naw_link:hover{
+    background-color: var(--third-color);
+}
+
+.meh {
+    font-size: 1.25rem;
+}
+
+.naw_name {
+    font-size: .875rem;
+    padding-top: 5px;
+}
+
+.expander {
+    width: calc(92px + 9.25rem);
+}
+
+/* .body-pd {
+    padding: 0 0 0 2rem;
+} */ /*nevermind XD*/
+
+/*ACTIVE LINKS MENU*/ 
+
+.active {
+    background-color: var(--third-color);
+}
+
+/* COLLAPSE MENU */
+
+.c {
+    grid-template-columns: 20px max-content 1fr;
+}
+
+.c_link {
+    justify-self: flex-end;
+    transition: .5s;
+}
+
+.c_menu {
+    margin-top: 5px;
+    margin-bottom: -10px;
+    display: none;
+    padding: .75rem 2.25rem;
+    line-height: 3rem;
+}
+
+.c_sublink {
+    color: var(--white);
+    font-size: .900rem;
+}
+
+.c_sublink:hover {
+    color: var(--color_9);
+}
+
+.showC {
+    display: block;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: .5s;
+}
 /* ****** MAIN CONTENT ******** */
 .banner {
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    /* background: linear-gradient(var(--primary-color), var(--secondary-color)); */
+    background: linear-gradient( rgba(2,62,125,1) 12%, rgba(47,137,228,1) 90%);
     height: 80vh;
     width: 100vw;
 }
+
 .informations {
     position: relative;
     height: 40vh;
