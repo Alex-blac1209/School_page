@@ -21,9 +21,9 @@
 // 	toggleClass(menuOpen, "hidden");
 // };
 
-// document.body.onload = () => {
-// 	document.body.classList.remove("preload");
-// };
+document.body.onload = () => {
+	document.body.classList.remove("preload");
+};
 
 const show_menu = (toggleId, navId, bodyId)=>{
 	const toggle = document.getElementById(toggleId),

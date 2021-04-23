@@ -115,8 +115,9 @@ a:hover {
     color: var(--white);
     border-radius: .5rem;
     margin-bottom: 1rem;
-    transition: .3s;
+    transition: background-color .3s;
     cursor: pointer;
+    background-color: var(--color_4);
 }
 
 .naw_link:hover{
@@ -154,7 +155,7 @@ a:hover {
 
 .c_link {
     justify-self: flex-end;
-    transition: .5s;
+    transition: background-color .5s, transform .5s;
 }
 
 .c_menu {
@@ -178,9 +179,8 @@ a:hover {
     display: block;
 }
 
-.rotate{
+.rotate {
     transform: rotate(180deg);
-    transition: .5s;
 }
 /* ****** MAIN CONTENT ******** */
 .banner {

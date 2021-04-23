@@ -32,12 +32,12 @@
 .custom-shape-divider-top-1619165810 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 200%;
     height: 143px;
 }
 
 [class*="custom-shape-divider-"] svg {
-    animation: flow  linear 30s infinite;
+    animation: flow  linear 20s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
@@ -51,7 +51,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-10%);
+        transform: translateX(-50%);
     }
   }
 
@@ -68,7 +68,7 @@
 .custom-shape-divider-bottom-1619073916 svg {
     position: relative;
     display: block;
-    width: calc(187% + 1.3px);
+    width: 200%;
     height: 68px;
 }
 
