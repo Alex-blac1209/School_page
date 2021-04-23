@@ -1,0 +1,29 @@
+---
+version: "3"
+services:
+  app:
+    build: .
+    restart: "always"
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: 'db'
+      DATABASE_USER: 'school_page'
+      DATABASE_PASSWORD: 'school_page'
+      DATABASE_DB: 'school_page'
+
+  db:
+    image: mysql:latest
+    restart: "always"
+    environment:
+      MYSQL_DATABASE: 'school_page'
+      MYSQL_USER: 'school_page'
+      MYSQL_PASSWORD: 'school_page'
+      MYSQL_ROOT_PASSWORD: 'superSecureRootPassword'
+    volumes:
+      - my-db:/var/lib/mysql
+
+volumes:
+  my-db:
