@@ -1,10 +1,8 @@
-const {Entity} = require("../database/Entity.js");
-
-class User extends Entity {
-    constructor() {
-        let values = "id int primary key auto_increment, name text";
-
-        super("user", values);
+class User {
+    constructor(id = null, name = null, email = null) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
     }
 }
 
