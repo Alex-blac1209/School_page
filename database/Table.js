@@ -1,12 +1,13 @@
 const {mysql_config} = require("../config/mysql.js");
 const mysql = require('mysql2/promise');
 const {EntityManager} = require('../utils/EntityManager.js');
+const {tables} = require("../config/tables.js");
 
 class Table {
-    constructor(tableName, values) {
+    constructor(tableName) {
         this.tableName = tableName;
         this.entityName = this.tableName.replace(/^\w/, (c) => c.toUpperCase());
-        this.values = values;
+        this.values = tables[this.tableName];
         this.create();
     }
 
@@ -79,22 +80,18 @@ class Table {
         const db = await mysql.createConnection(mysql_config);
 
         let v1 = [],
-            v2 = [];
+            v2 = [],
+            v2_placeholder = [];
 
         for(let key in object) {
             v1[v1.length] = key;
-            if(object[key])
-                v2[v2.length] = "'" + object[key] + "'";
-            else
-                v2[v2.length] = "null";
-
+            v2_placeholder[v2_placeholder.length] = "?"
+            v2[v2.length] = object[key];
         }
 
-        let query = `insert into ${this.tableName} values(${v2.join(", ")})`;
+        let query = `insert into ${this.tableName}(${v1.join()}) values(${v2_placeholder.join()})`;
 
-        console.log(query);
-
-        await db.query(query);
+        await db.query(query, v2);
 
         await db.end();
     };

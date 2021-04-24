@@ -17,9 +17,6 @@ app.set("twig options", {
 });
 
 
-let table = new Table("user", "id int primary key auto_increment, name text, email text");
-let em = new EntityManager();
-
 //////// ROUTES //////////
 
 // Homepage
@@ -29,17 +26,25 @@ app.get("/", (request, response) => {
 
 // Debug Page
 app.get("/debug", async (request, response) => {
+    let table = new Table("user");
+
     console.log(await table.fetchBy(["id = ?"], [2]));
-    console.log(await table.fetchAll());
+    let users = await table.fetchAll();
+    
     response.render("main/debug.html.twig", {
         debug: "LOL",
+        users: users,
     });
 });
 
 // Insert new user
 app.get("/new", async (request, response) => {
+    let table = new Table("user");
+    let em = new EntityManager();
+
     let user = new (em.getAvailable()["User"])(null, "Majroch", "jakuboch4@gmail.com");
     await table.insert(user);
+
     response.render("main/debug.html.twig", {
         debug: "Done!",
     });
