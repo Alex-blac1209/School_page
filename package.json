@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Alex-blac1209/School_page#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "multer": "^1.4.2",
     "mysql2": "^2.2.5",
     "twig": "^1.15.4"
   }

@@ -2,7 +2,7 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8" />
-        <title>Strona główna</title>
+        <title>{% block title %}Strona główna{% endblock title %}</title>
 
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css" />
@@ -25,7 +25,7 @@
                         <a href="#" class="logo_link"><img src="images/logo_k.png" alt="logo Kasprzaka" class="nav_logo"></a>
                     </div>
                     <div class="naw_list">
-                        <a href="" class="naw_link active">
+                        <a href="/" class="naw_link active">
                             <i class="fas fa-home meh"></i>
                             <span class="naw_name">Home</span>
                         </a>
@@ -45,13 +45,13 @@
                         </div>
                     </div>
                     <div class="naw_list">
-                        <a href="" class="naw_link">
+                        <a href="#" class="naw_link">
                             <i class="fas fa-phone meh"></i>
                             <span class="naw_name">Contact</span>
                         </a>
                     </div>
                     <div class="naw_list">
-                        <a href="" class="naw_link">
+                        <a href="#" class="naw_link">
                             <i class="far fa-newspaper meh"></i>
                             <span class="naw_name">News</span>
                         </a>

@@ -84,9 +84,11 @@ class Table {
             v2_placeholder = [];
 
         for(let key in object) {
-            v1[v1.length] = key;
-            v2_placeholder[v2_placeholder.length] = "?"
-            v2[v2.length] = object[key];
+            if(key[0] != "_") {
+                v1[v1.length] = key;
+                v2_placeholder[v2_placeholder.length] = "?";
+                v2[v2.length] = object[key];
+            }
         }
 
         let query = `insert into ${this.tableName}(${v1.join()}) values(${v2_placeholder.join()})`;
