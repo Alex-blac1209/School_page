@@ -26,7 +26,7 @@ body, html {
     position: relative;
     min-height: 100vh;
     max-width: 100vw;
-    width: 100vw;
+    width: 100wv;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -187,7 +187,7 @@ a:hover {
 .banner {
     /* background: linear-gradient(var(--primary-color), var(--secondary-color)); */
     background: linear-gradient( rgba(2,62,125,1) 12%, rgba(47,137,228,1) 90%);
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -201,8 +201,36 @@ a:hover {
     color: white;
     visibility: hidden;
     background-color: var(--color_5);
+    opacity: 0.5;
 }
 
+.x {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.head {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50vw;
+    padding-left: 5em;
+    padding-top: 3em;
+    color: var(--white);
+}
+
+.desc_head {
+    font-size: 1.5em;
+    padding-left: 5em;
+    color: white;
+    text-align: center;
+}
+
+.main_img {
+    width: 1000px;
+    float: right;
+    padding-right: 5em;
+    padding-top: 5em;
+}
 .informations {
     position: relative;
     height: 40vh;
@@ -242,17 +270,69 @@ footer {
   -o-transition: none !important;
 }
 
+
+@media all and (max-width: 1633px){
+    
+   .head {
+       padding-top: 6em;
+       padding-left: 3.5em;
+       width: 40vw;
+       text-align: center;
+       padding-bottom: 0.5em;
+       
+   }
+   
+    .desc_head {
+       font-size: 1.5em;
+       width: 40vw;
+       padding-left: 5em;
+   }
+
+}
+
+@media all and (max-width: 1000px){
+    
+    .head {
+        padding-top: 3em;
+        width: 100vw;
+    }
+
+    .desc_head {
+        width: 90vw;
+        padding-left: 11em;
+        font-size: 1.2em;
+    }
+
+    .main_img {
+        width: 80vw;
+    }
+ 
+}
+
 @media all and (max-width: 850px){
+    
+    body {
+        width: 100vw;
+    }
     
     .s-nawigacja {
         width: 0;
         opacity: 0;
     }
     
-    
     #ham_icon {
         visibility: visible;
     }
 
+
+}
+
+@media all and (max-width: 380px){
+
+    .head {
+        font-size: 1em;
+        text-align: center;
+        padding:  6em 2em;
+    }
 
 }
