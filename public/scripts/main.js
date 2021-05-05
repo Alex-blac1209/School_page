@@ -25,38 +25,25 @@ document.body.onload = () => {
 	document.body.classList.remove("preload");
 };
 
-const show_menu = (toggleId, navId, bodyId)=>{
-	const toggle = document.getElementById(toggleId),
-	navbar = document.getElementById(navId),
-	bodypadding = document.getElementById(bodyId)
+const showMenu = (headerToggle, navbarId) =>{
+    const toggleBtn = document.getElementById(headerToggle),
+    nav = document.getElementById(navbarId)
+    
 
-	if(toggle && navbar){
-		toggle.addEventListener('click',()=>{
-			navbar.classList.toggle('expander')
-
-			bodypadding.classList.toggle('body-pd')
-		})
-	}
+    if(headerToggle && navbarId){
+        toggleBtn.addEventListener('click', ()=>{
+            nav.classList.toggle('show-menu')
+            toggleBtn.classList.toggle('fa-times')
+        })
+    }
 }
-
-show_menu('naw-toggle','nawigacja','body-pd');
+showMenu('banner_toggle','nawigacja')
 
 const linkColor = document.querySelectorAll('.naw_link')
+
 function colorLink(){
-  linkColor.forEach(l=> l.classList.remove('active'))
-  this.classList.add('active')
+    linkColor.forEach(l => l.classList.remove('active'))
+    this.classList.add('active')
 }
-linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
-const linkC = document.getElementsByClassName('c_link')
-var i;
-
-for(i=0;i<linkC.length;i++){
-  linkC[i].addEventListener('click', function(){
-    const cMenu = this.nextElementSibling
-    cMenu.classList.toggle('showC')
-
-	const rotate = cMenu.previousElementSibling
-    rotate.classList.toggle('rotate')
-  })
-}
+linkColor.forEach(l => l.addEventListener('click', colorLink))

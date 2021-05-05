@@ -2,18 +2,76 @@
 
 {% block body %}
     <div class="banner">
-        <div class="kontener">
-            <div class="row align-items-center">
-                <i class="fas fa-bars" id="ham_icon"></i>
-                <div class="col-lg-6 md-col-6 sm-col-12 text-white align-text-middle mobile-title">
-                    <h2 class="head" data-text="ZS nr 36 im. Marcina Kasprzaka">ZS nr 36 im. Marcina Kasprzaka</h2>
-                    <p class="desc_head">Technologie są dla tej placówki dobrze znane. W końcu jest to szkoła nadchodzącej przyszłości...</p>
-                </div>
-                <div class="col-lg-6 md-col-6 sm-col-12 text-white align-text-middle">
-                    <img src="images/main_img.svg" class="main_img" alt="Uczeń przy komputerze" loading="lazy">
-                </div>
+        <div class="banner_container">
+            <a href="#" class="banner_logo"><img src="images/logo_k.png" alt="Logo Kasprzaka" class="banner_img"></a>
+
+            <div class="banner_toggle">
+                <i class="fas fa-bars" id="banner_toggle"></i>
             </div>
         </div>
+    </div>
+
+    <div class="s-nawigacja" id="nawigacja">
+        <nav class="naw">
+            <div>
+                <a href="#" class="naw_link naw__logo">
+                    <i class="fas fa-robot naw_icon"></i>
+                    <span class="naw_logo-name">ZS nr 36 im. Marcina Kasprzaka</span>
+                </a>
+
+                <div class="naw-list">
+                    <div class="naw_items">
+                        <a href="#" class="naw_link active">
+                            <i class="fas fa-home naw_icon"></i>
+                            <span class="naw_name">Home</span>
+                        </a>
+                        <div class="naw_dropdown">
+                            <a href="#" class="naw_link">
+                                <i class="fas fa-graduation-cap naw_icon"></i>
+                                <span class="naw_name">School</span>
+                                <i class="fas fa-chevron-down naw_icon naw_dropdown_icon"></i>
+                            </a>
+
+                            <div class="naw_dropdwon_coll">
+                                <div class="naw_dropdown_content">
+                                    <a href="#" class="naw_dropdown_items">For Parents</a>
+                                    <a href="#" class="naw_dropdown_items">For Students</a>
+                                    <a href="#" class="naw_dropdown_items">Projects</a>
+                                    <a href="#" class="naw_dropdown_items">Exams</a>
+                                    <a href="#" class="naw_dropdown_items">Documents</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <a href="https://uonetplus.vulcan.net.pl/warszawawola" class="naw_link">
+                            <i class="fas fa-book naw_icon"></i>
+                            <span class="naw_name">Diary</span>
+                        </a>
+
+                        <a href="#" class="naw_link">
+                            <i class="far fa-newspaper naw_icon"></i>
+                            <span class="naw_name">News</span>
+                        </a>
+
+                        <a href="#" class="naw_link">
+                            <i class="fas fa-phone-alt naw_icon"></i>
+                            <span class="naw_name">Contact</span>
+                        </a>
+
+                        <a href="#" class="naw_link">
+                            <i class="fas fa-photo-video naw_icon"></i>
+                            <span class="naw_name">Gallery</span>
+                        </a>
+
+                        <a href="#" class="naw_link">
+                            <i class="far fa-handshake naw_icon"></i>
+                            <span class="naw_name">Partners</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
     
     <div class="informations">
