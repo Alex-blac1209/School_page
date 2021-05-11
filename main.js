@@ -79,6 +79,58 @@ app.post("/login", async (request, response) => {
     response.redirect("/login");
 });
 
+// Register page
+app.get("/register", (request, response) => {
+    if(request.session.user) {
+        response.redirect("/");
+        return;
+    }
+
+    let lastUsername = request.query.lastUsername;
+    let lastEmail = request.query.lastEmail;
+
+    response.render("main/register.html.twig", {
+        lastUsername,
+        lastEmail,
+    });
+});
+app.post("/register", async (request, response) => {
+    if(request.session.user) {
+        response.redirect("/");
+        return;
+    }
+
+    let username = request.body.username;
+    let email = request.body.email;
+    let pass1 = request.body.pass1;
+    let pass2 = request.body.pass2;
+
+    if(!username || !email || !pass1 || !pass2) {
+        response.redirect(`/register?lastUsername=${username}&lastEmail=${email}`);
+        return;
+    }
+
+    if(pass1 != pass2) {
+        response.redirect(`/register?lastUsername=${username}&lastEmail=${email}`);
+        return;
+    }
+
+    // Now, we can register user!
+    let table = new Table("user");
+    let em = new EntityManager();
+
+    let user = new (em.getAvailable()["User"])(null, username, email);
+    user._setPassword(pass1);
+    await table.insert(user);
+
+    response.redirect("/postRegister");
+});
+
+// Post-Register page
+app.get("/postRegister", (request, response) => {
+    response.render("main/postRegister.html.twig");
+});
+
 // Logout page
 app.get("/logout", (request, response) => {
     request.session.destroy(err => {
@@ -114,21 +166,6 @@ app.get("/debug", async (request, response) => {
         users: users,
     });
 });
-
-// Insert new user
-app.get("/new", async (request, response) => {
-    let table = new Table("user");
-    let em = new EntityManager();
-
-    let user = new (em.getAvailable()["User"])(null, "Majroch", "jakuboch4@gmail.com");
-    user._setPassword("testPassword");
-    await table.insert(user);
-
-    response.render("main/debug.html.twig", {
-        debug: "Done!",
-    });
-});
-
 
 
 ///////// Run Server /////////////

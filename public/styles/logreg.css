@@ -19,7 +19,8 @@
 }
 
 .logreg input[type = "text"],
-.logreg input[type = "password"] {
+.logreg input[type = "password"],
+.logreg input[type = "email"] {
     padding: 20px;
     border-radius: 20px;
     background-color: var(--primary-color);
@@ -29,7 +30,8 @@
 }
 
 .logreg input[type = "text"]:focus,
-.logreg input[type = "password"]:focus {
+.logreg input[type = "password"]:focus,
+.logreg input[type = "email"]:focus {
     outline: none;
     transform: scale(1.05, 1.05);
     box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, .8);

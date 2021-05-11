@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="logreg">
+        <div class="form">
+            <h3>Rejestracja</h3>
+            <form method="POST">
+                <div class="form-group">
+                    <label class="form-label" for="name">Nazwa Użytkownika</label>
+                    <input class="form-control" type="text" id="name" name="username" placeholder="Nazwa Użytkownika" value="{{ lastUsername }}" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">E-Mail</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="E-Mail" value="{{ lastEmail }}" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="pass1">Hasło</label>
+                    <input class="form-control" type="password" id="pass1" name="pass1" placeholder="Hasło" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="pass2">Powtórz hasło</label>
+                    <input class="form-control" type="password" id="pass2" name="pass2" placeholder="Powtórz hasło" />
+                </div>
+
+                <br />
+                <input type="submit" class="btn" value="Zarejestruj" />
+            </form>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="styles/logreg.css" />
+{% endblock css %}
