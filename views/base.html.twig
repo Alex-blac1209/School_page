@@ -11,21 +11,130 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="icon" type="image/png" href="images/logo_k.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Shadows+Into+Light+Two&family=Spartan:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coustard:wght@400;900&family=Spartan:wght@300;400;500;600&display=swap" rel="stylesheet">
         {% block css %}{% endblock css %}
     </head>
     <body class="preload" id="body-pd">
     
         {# MENU #}
- 
+        <div class="s-nawigacja" id="nawigacja">
+            <nav class="naw">
+                <div>
+                    <a href="#" class="naw_link naw__logo">
+                        <i class="fas fa-robot naw_icon"></i>
+                        <span class="naw_logo-name">ZS nr 36 im. Marcina Kasprzaka</span>
+                    </a>
+
+                    <div class="naw-list">
+                        <div class="naw_items">
+                            <a href="/" class="naw_link active">
+                                <i class="fas fa-home naw_icon"></i>
+                                <span class="naw_name">Strona główna</span>
+                            </a>
+
+                            <a href="/about_us" class="naw_link">
+                                <i class="fas fa-users naw_icon"></i>
+                                <span class="naw_name">O nas</span>
+                            </a>
+
+                            <div class="naw_dropdown">
+                                <a href="#" class="naw_link">
+                                    <i class="fas fa-graduation-cap naw_icon"></i>
+                                    <span class="naw_name">Szkoła</span>
+                                    <i class="fas fa-chevron-down naw_icon naw_dropdown_icon"></i>
+                                </a>
+
+                                <div class="naw_dropdwon_coll">
+                                    <div class="naw_dropdown_content">
+                                        <a href="/for_students" class="naw_dropdown_items">Dla uczniów</a>
+                                        <a href="/for_parents" class="naw_dropdown_items">Dla rodziców</a>
+                                        <a href="/projects" class="naw_dropdown_items">Projekty</a>
+                                        <a href="/exams" class="naw_dropdown_items">Egzaminy</a>
+                                        <a href="/documents" class="naw_dropdown_items">Dokumenty</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <a href="https://uonetplus.vulcan.net.pl/warszawawola" class="naw_link">
+                                <i class="fas fa-book naw_icon"></i>
+                                <span class="naw_name">Dziennik</span>
+                            </a>
+
+                            <a href="/news" class="naw_link">
+                                <i class="far fa-newspaper naw_icon"></i>
+                                <span class="naw_name">Aktualności</span>
+                            </a>
+
+                            <a href="/contact" class="naw_link">
+                                <i class="fas fa-phone-alt naw_icon"></i>
+                                <span class="naw_name">Kontakt</span>
+                            </a>
+
+                            <a href="/gallery" class="naw_link">
+                                <i class="fas fa-photo-video naw_icon"></i>
+                                <span class="naw_name">Galeria</span>
+                            </a>
+
+                            <a href="/partners" class="naw_link">
+                                <i class="far fa-handshake naw_icon"></i>
+                                <span class="naw_name">Partnerzy</span>
+                            </a>
+
+                            <a href="/login" class="naw_link">
+                                <i class="fas fa-sign-in-alt naw_icon"></i>
+                                <span class="naw_name">Zaloguj się</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
         {# MAIN CONTENT #}
         {% block body %}{% endblock body %}
         {# END MAIN CONTENT #}
 
+        <div class="statistics">
+            <section class="important_things">
+                <div class="box-container">
+
+                        <a href="https://kasprzak.edu.pl/dane/bip/index.html"><img src="images/bip.png" alt="biuletyn informacji publicznej" class="img1"></a>
+            
+                        <a href="/documents"></a><img src="images/procedury-bezpieczenstwa.png" alt="procedury bezpueczeństwa covid 19" class="img2">
+                    
+                    
+                        <img src="images/eko_z_twoja_wola.png" alt=" eko z twoją wolą" class="img3">
+                
+                
+                        <img src="images/staze_zagraniczne.png" alt="staże europejskie z funduszy Unii Europejskiej" class="img4">
+            
+                
+                        <img src="images/azure.png" alt="Microsoft Azure" class="img5">
+                
+        
+                        <img src="images/Office_365_logo.png" alt="Office 365" class="img6">
+                
+                
+                        <img src="images/cisco_partner.png" alt="Cisco networking academy" class="img7">
+            
+                
+                        <img src="images/szkolaambasador.png" alt="szkoła-ambasador parlamentu europejskiego" class="img8">
+            
+            
+                        <img src="images/logo_testy.jpg" alt="testy online - egzaminy zawodowe" class="img9">
+            
+    
+                        <img src="images/VULCAN-logo.svg" alt="Dziennik VULCAN" class="img10">
+    
+                        <img src="images/noun_job.png" alt="oferty pracy dla absolwentów" class="img11">
+
+                </div>
+            </section>
+        </div>
         {# FOOTER #}
         <footer>
-            &copy; 2021 :)
+            &copy; 2021 Copyright: Aleksandra Maliszewska, Mikołaj Duński, Julia Madej <span> || All rights reserved</span>
         </footer>
 
 

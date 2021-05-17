@@ -11,6 +11,7 @@ const Twig = require('twig');
 
 // POST data middleware
 var multer = require('multer');
+const { response } = require("express");
 var upload = multer();
 
 const app = express();
@@ -47,6 +48,56 @@ let em = new EntityManager();
 app.get("/", (request, response) => {
     response.render("main/index.html.twig");
 });
+
+//About us page 
+app.get("/about_us", (request, response) => {
+    response.render("main/about_us.html.twig");
+});
+
+//Students, Parents, Exams, Projects, Documents page
+
+app.get("/for_students", (request, response) => {
+    response.render("main/for_students.html.twig");
+});
+
+app.get("/for_parents", (request, response) => {
+    response.render("main/for_parents.html.twig");
+});
+
+app.get("/projects", (request, response) => {
+    response.render("main/projects.html.twig");
+});
+
+app.get("/exams", (request, response) => {
+    response.render("main/exams.html.twig");
+});
+
+app.get("/documents", (request, response) => {
+    response.render("main/documents.html.twig");
+});
+
+//News page 
+
+app.get("/news", (request, response) => {
+    response.render("main/news.html.twig");
+});
+
+//Contact page
+app.get("/contact", (request, response) => {
+    response.render("main/contact.html.twig");
+});
+
+//Gallery page
+app.get("/gallery", (request, response) => {
+    response.render("main/gallery.html.twig");
+});
+
+//Partners 
+app.get("/partners", (request, response) => {
+    response.render("main/partners.html.twig");
+})
+
+
 
 // Login page
 app.get("/login", (request, response) => {
