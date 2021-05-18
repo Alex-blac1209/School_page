@@ -8,7 +8,9 @@ class Table {
         this.tableName = tableName;
         this.entityName = this.tableName.replace(/^\w/, (c) => c.toUpperCase());
         this.values = tables[this.tableName];
-        this.create();
+        (async () => {
+            await this.create();
+        })();
     }
 
     create = async () => {

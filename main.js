@@ -9,6 +9,9 @@ const express_session = require('express-session');
 // Twig rendering engine
 const Twig = require('twig');
 
+// Rss engine
+const RSS = require('rss');
+
 // POST data middleware
 var multer = require('multer');
 const { response } = require("express");
@@ -95,8 +98,34 @@ app.get("/gallery", (request, response) => {
 //Partners 
 app.get("/partners", (request, response) => {
     response.render("main/partners.html.twig");
-})
+});
 
+// Rss page
+app.get("/rss", async (request, response) => {
+    response.header("Content-type", "text/xml");
+
+    let rssFeed = new RSS({
+        title: "Zespół Szkół nr. 36 im. Marcina Kasprzaka",
+        description: "Główna strona szkolna. Projekt zrealizowany przez: Aleksandra Maliszewska",
+        site_url: `${request.protocol}://${request.get('Host')}/rss`,
+        language: "pl",
+    });
+
+    let newsTable = new Table("news");
+    let allNews   = await newsTable.fetchAll();
+
+    for(let news in allNews) {
+        let getAuthor = await (new Table("user")).fetchBy(["id = ?"], [allNews[news].author]);
+        rssFeed.item({
+            title: allNews[news].title,
+            description: allNews[news].description,
+            url: `${request.protocol}://${request.get('Host')}${allNews[news].path}`,
+            author: getAuthor.name,
+        });
+    }
+
+    response.send(rssFeed.xml());
+});
 
 
 // Login page
