@@ -1,11 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Profil - {{ user.name }}{% endblock title %}
-
 {% block body %}
     <div class="profile">
         <div class="info">
-            Czy admin: {{ user.admin }}
+            <h3>Witamy {{ user.name }}</h3>
         </div>
     </div>
 {% endblock body %}

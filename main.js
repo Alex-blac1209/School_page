@@ -127,6 +127,24 @@ app.get("/rss", async (request, response) => {
     response.send(rssFeed.xml());
 });
 
+// ADMIN PANEL
+
+// Main admin panel page
+app.get("/admin", async (request, response) => {
+    if(!request.session.user) {
+        response.redirect("/login");
+        return;
+    }
+    if(request.session.user.admin != true) {
+        response.redirect("/");
+        return;
+    }
+
+    response.render("admin/index.html.twig", {
+        user: request.session.user,
+    });
+});
+
 
 // Login page
 app.get("/login", (request, response) => {
