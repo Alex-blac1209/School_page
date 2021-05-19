@@ -47,3 +47,18 @@ function colorLink(){
 }
 
 linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+$(document).ready(function(){
+    $('.informations_gallery .galeria .button-container .butn').click(function(){
+
+        let filter = $(this).attr('data-filter');
+
+        if(filter == 'all'){
+            $('.galeria .image-container .meh').show('400');
+        }
+        else {
+            $('.galeria .image-container .meh').not('.' + filter).hide('200');
+            $('.galeria .image-container .meh').filter('.' + filter).show('400');
+        }
+    });
+});
