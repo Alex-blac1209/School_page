@@ -62,6 +62,22 @@ a:hover {
     text-decoration: none;
 }
 
+.btn-main {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px var(--color_5) solid;
+    color: var(--white);
+    transition: transform .3s, box-shadow .3s;
+    margin: 5px 0;
+}
+
+.btn-main:hover {
+    outline: none;
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, .8);
+}
+
 /* ****** NAVBAR ******* */
 
 /* ****** MAIN CONTENT ******** */

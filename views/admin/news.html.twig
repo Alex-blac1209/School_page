@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="profile">
+        <div class="info">
+            <h3>Wpisy</h3>
+            <div class="list-group">
+                {% for new in news %}
+                <a class="list-group-item" href="/admin/news/getNews?id={{ new.id }}">{{ new.title }}</a>
+                {% else %}
+                <p>Przepraszamy, ale nie ma żadnych wpisów</p>
+                {% endfor %}
+            </div>
+            <h3>Zarządzanie</h3>
+            <a class="btn btn-main" href="/admin/news/add">Nowy wpis</a>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css" />
+{% endblock css %}

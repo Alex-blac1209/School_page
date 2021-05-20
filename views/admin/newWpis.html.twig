@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="logreg">
+        <div class="form">
+            <h3>Nowy wpis</h3>
+            <form>
+                <input type="text" placeholder="Tytuł" value="{{ title }}" name="title" /><br />
+                <textarea name="description" placeholder="Opis">{{ description }}</textarea><br />
+                <input type="text" placeholder="Ścieżka" name="path" value="{{ path }}" /><br />
+                <br />
+                <input type="submit" value="Zatwierdź" class="btn btn-main" />
+            </form>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="/styles/logreg.css" />
+{% endblock css %}

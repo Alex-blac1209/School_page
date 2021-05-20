@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="profile">
+        <div class="info">
+            <h3>{{ news.title }}</h3>
+            <p>{{ news.description }}</p>
+            <p>Autor: {{ author.name }}</p>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css" />
+{% endblock css %}
