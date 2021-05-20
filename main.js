@@ -79,6 +79,25 @@ app.get("/documents", (request, response) => {
     response.render("main/documents.html.twig");
 });
 
+//Documents subpages
+
+app.get("/for_students_documents", (request, response) => {
+    response.render("main/for_students_documents.html.twig");
+});
+
+app.get("/for_parents_documents", (request, response) => {
+    response.render("main/for_parents_documents.html.twig");
+});
+
+app.get("/for_teachers_documents", (request, response) => {
+    response.render("main/for_teachers_documents.html.twig");
+});
+
+app.get("/for_all_documents", (request, response) => {
+    response.render("main/for_all_documents.html.twig");
+});
+
+
 //News page 
 
 app.get("/news", (request, response) => {
