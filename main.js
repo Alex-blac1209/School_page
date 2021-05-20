@@ -125,8 +125,22 @@ app.get("/for_all_documents", (request, response) => {
 
 //News page 
 
-app.get("/news", (request, response) => {
-    response.render("main/news.html.twig");
+app.get("/news", async (request, response) => {
+    let news = await (new Table("news")).fetchAll();
+
+    response.render("main/news.html.twig", {
+        news: news,
+    });
+});
+
+app.get("/news/:id", async (request, response) => {
+    let oneNews = (await (new Table("news")).fetchBy(["id = ?"], [request.params["id"]]))[0];
+    let author = (await (new Table("user")).fetchBy(["id = ?"], [oneNews.author]))[0];
+
+    response.render("main/oneNews.html.twig", {
+        news: oneNews,
+        author: author,
+    })
 });
 
 //Contact page
