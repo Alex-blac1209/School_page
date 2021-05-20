@@ -64,6 +64,9 @@
     line-height: 0;
     transform: rotate(180deg);
 }
+.custom-shape-divider-no-reverse {
+    transform: none;
+}
 
 .custom-shape-divider-bottom-1619073916 svg {
     position: relative;
@@ -73,7 +76,7 @@
 }
 
 .custom-shape-divider-bottom-1619073916 .shape-fill {
-    fill: #0466C8;
+    fill: #023E7D;
 }
 
 
@@ -106,6 +109,7 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1621515994 svg {
@@ -116,5 +120,5 @@
 }
 
 .custom-shape-divider-bottom-1621515994 .shape-fill {
-    fill: #023E7D;
+    fill: #0466C8;
 }
