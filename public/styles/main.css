@@ -104,8 +104,6 @@ a:hover {
 }
 
 .banner_img {
-    width: 15rem; 
-    height: 11rem; 
     padding-top: 3rem;
     padding-left: 6rem; 
 }
@@ -696,23 +694,31 @@ a:hover {
 
 .statistics {
     background: linear-gradient(var(--third-color), var(--color_4));
-    height: 80vh;
     width: 100vw;
-    margin: 0 !important;
-    padding: 0 !important;
     position: relative;
+    color: white;
+    padding-bottom: 100px;
 }
 
 .statistics .important_things .box-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 3rem;
     
 }
+.statistics .list-group .list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .3s, transform .3s;
+}
+.statistics .list-group .list-group-item:hover {
+    background-color: rgba(0, 0, 0, .3);
+    transform: scale(1.05, 1.05);
+}
 
-.statistics .important_things .box-container img {
+/*.statistics .important_things .box-container img {
     padding: 2rem;
     flex: 1 1 10rem;
 }
@@ -770,7 +776,7 @@ a:hover {
 .statistics .important_things .box-container .img11 {
     width: 5rem;
     height:20rem;
-}
+}*/
 
 
 
@@ -830,21 +836,6 @@ footer span {
 
     .informations_contact {
         height: 330vh;
-    }
-
-    .statistics {
-        height: 200vh;
-    }
-
-    .statistics .important_things .box-container {
-        width: 50%;
-    }
-
-    .statistics .important_things .box-container img {
-        align-items: center;
-        width: 50%;
-        height: 50%;
-        padding-left: 0;
     }
 }
 
@@ -982,17 +973,6 @@ footer span {
         width: 6rem;
         height: 6rem;
     }
-
-    .statistics {
-        height: 200vh;
-    }
-
-    .statistics .important_things .box-container {
-        width: 50%;
-        padding-left: 12rem;
-
-        justify-content: space-around;
-    }
     
 }
 
@@ -1013,9 +993,6 @@ footer span {
         height: 330vh;
     }
 
-    .statistics {
-        height: 350vh;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1037,22 +1014,5 @@ footer span {
 
     .add_contact_info .box-container .box:nth-child(5){
         width: 90%;
-    }
-
-    .statistics {
-        height: 400vh;
-    }
-
-
-    .statistics .important_things .box-container .img1 {
-        width: 20rem;
-    }
-
-    .statistics .important_things .box-container .img2 {
-        width: 15rem;
-    }
-
-    .statistics .important_things .box-container .img4 {
-        width: 20rem;
     }
 }
