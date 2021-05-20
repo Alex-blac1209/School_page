@@ -1,6 +1,6 @@
 .informations_partners {
     position: relative;
-    height: 250vh;
+    /*height: 250vh;*/
     width: 100vw;
 }
 
@@ -13,6 +13,7 @@
     min-height: 100vh;
     flex-wrap: wrap;
     max-width: 3000px;
+    padding-bottom: 100px;
 }
 
 .kon .card {

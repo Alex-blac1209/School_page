@@ -400,25 +400,25 @@ body > * {
 
 .informations {
     position: relative;
-    height: 60vh;
+    /*height: 60vh;*/
     width: 100vw;
 }
 
 .informations_contact {
     position: relative;
-    height: 130vh;
+    /*height: 130vh;*/
     width: 100vw;
 }
 
 .informations_documents {
     position: relative;
-    height: 110vh;
+    /*height: 110vh;*/
     width: 100vw;
 }
 
 .informations_about {
     position: relative;
-    height: 105vh;
+    /*height: 105vh;*/
     width: 100vw;
 }
 
@@ -428,7 +428,8 @@ body > * {
 }
 
 .add_contact_info {
-    min-height: 150vh ;
+    /*min-height: 150vh ;*/
+    padding-bottom: 100px;
 }
 
 .add_contact_info .box-container {
@@ -517,11 +518,10 @@ body > * {
 
 .boss_info {
     display: inline-block;
-    padding: 1rem 10rem;
+    padding: 100px 10rem;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-bottom: 40vw;
 }
 
 .boss_info .pud {
@@ -534,11 +534,11 @@ body > * {
     -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 
-.boss_info .pud:hover {
+/*.boss_info .pud:hover {
     color: var(--primary-color);
     transform: scale(1.1);
     transition: 0.5s;
-}
+}*/
 
 .boss_info .pud p {
     font-size: 1.5rem;
@@ -553,7 +553,7 @@ body > * {
 
 .informations_gallery {
     position: relative;
-    height: 170vh;
+    /*height: 170vh;*/
     width: 100vw;
 }
 
@@ -605,6 +605,10 @@ body > * {
     color: var(--primary-color);
     text-transform: uppercase;
     
+}
+
+.informations_gallery .galeria {
+    padding-bottom: 50px;
 }
 
 .informations_gallery .galeria .button-container {
