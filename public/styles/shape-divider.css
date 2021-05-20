@@ -24,7 +24,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     line-height: 0;
 }
@@ -32,7 +32,7 @@
 .custom-shape-divider-top-1619165810 svg {
     position: relative;
     display: block;
-    width: 200%;
+    width: 200vw;
     height: 143px;
 }
 
@@ -59,7 +59,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
@@ -68,7 +68,7 @@
 .custom-shape-divider-bottom-1619073916 svg {
     position: relative;
     display: block;
-    width: 200%;
+    width: 200vw;
     height: 68px;
 }
 
