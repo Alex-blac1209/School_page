@@ -325,6 +325,211 @@ body > * {
     transition: .4s;
 }
 
+.informations .kon {
+    width: 1500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 50vh;
+    border: none;
+    outline: hidden;
+}
+
+.informations .kon .card {
+    position: relative;
+}
+
+.informations .kon .card .face {
+    width: 450px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.informations .kon .card .face.face1 {
+    position: relative;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(150px);
+}
+
+.informations .kon .card:hover .face.face1 {
+    transform: translateY(-200px);
+    background: var(--secondary-color);
+}
+
+.informations .kon .card:hover .face.face1 .content h3 {
+    color: var(--white);
+}
+
+.informations .kon .card .face.face1 .content {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.informations .kon .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.informations .kon .card .face.face1 .content img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.informations .kon .card .face.face1 .content h3 {
+    margin: 30px 0 0;
+    padding: 0;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.informations .kon .card .face.face2 {
+    position: relative;
+    background: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    transform: translateY(-200px);
+}
+
+.informations .kon .card .face.face2 p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.informations .kon .card .face.face2 a{
+    margin: 20px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--white);
+    padding: 5px;
+    border: 1px solid var(--white);
+    font-size: 1.3rem;
+    border-radius: .3rem;
+}
+
+.informations .kon .card .face.face2 a:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+
+.informations .additional_info {
+    min-height: 100vh;
+}
+
+.stats .heading {
+    padding-bottom: 0rem;
+    font-size: 4rem;
+}
+
+.stats .kont {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    width: 1700px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.stats .kont .cardi {
+    position: relative;
+    width: 400px;
+    height: 350px;
+}
+
+.stats .kont .cardi .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.stats .kont .cardi .face.face1 {
+    background: linear-gradient(180deg, rgba(3,83,164,1) 28%, rgba(0,40,85,1) 76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform-origin: bottom;
+}
+
+.stats .kont .cardi .face.face1 i{
+    max-width: 100px;
+    font-size: 6em;
+    color: var(--white);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+}
+
+.stats .kont .cardi .face.face1 h3 {
+    margin: 40px 0 0;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.stats .kont .cardi:hover .face.face1 {
+    transform: translateY(-100%) rotateX(90deg);
+    transition: all 0.5s ease;
+}
+
+.stats .kont .cardi .face.face2 {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+    color: var(--primary-color);
+    line-height: 2em;
+    font-size: 1em;
+}
+
+.stats .kont .cardi:hover .face.face2 {
+    transform: translateY(0%) rotateX(0deg);
+    transition: all 0.5s ease;
+}
+
+.stats .kont .cardi .face.face2 a {
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    margin: 20px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+}
+
+.stats .kont .cardi .face.face2 a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+
+
 .contact {
     min-height: 100vh;
     width: 100vw;
