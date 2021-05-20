@@ -1,4 +1,4 @@
-var {port, allowRegistration} = require("./config/http.js");
+var {port, allowRegistration, email, receivers} = require("./config/http.js");
 var {EntityManager} = require("./utils/EntityManager.js");
 var {Table} = require("./database/Table.js");
 
@@ -11,6 +11,23 @@ const Twig = require('twig');
 
 // Rss engine
 const RSS = require('rss');
+
+// Nodemailer
+const nodemailer  = require("nodemailer");
+var smtpConfig = {
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // use SSL
+    auth: email
+};
+const transporter = nodemailer.createTransport(smtpConfig);
+transporter.verify(function(error, success) {
+   if (error) {
+        console.log(error);
+   } else {
+        console.log('Server is ready to take our messages');
+   }
+});
 
 // POST data middleware
 var multer = require('multer');
@@ -109,6 +126,34 @@ app.get("/news", (request, response) => {
 
 //Contact page
 app.get("/contact", (request, response) => {
+    response.render("main/contact.html.twig");
+});
+app.post("/contact", (request, response) => {
+
+    let imie = request.body.imie || "";
+    let nazwisko = request.body.nazwisko || "";
+    let email = request.body.email || "";
+    let content = request.body.content || "";
+
+    if(
+        imie != "" &&
+        nazwisko != "" &&
+        email != "" &&
+        content != ""
+    ) {
+        let emailContent = {
+            from: email,
+            bcc:  receivers,
+            subject: "Ktoś potrzebuje pomocy!",
+            html: `<p>Ktoś potrzebuje pomocy: ${imie} ${nazwisko} (${email})</p><p>${content}</p>`,
+        };
+
+        transporter.sendMail(emailContent);
+
+        response.redirect("/contact");
+        return;
+    }
+
     response.render("main/contact.html.twig");
 });
 

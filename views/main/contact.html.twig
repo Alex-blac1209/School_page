@@ -15,14 +15,14 @@
                     </div>
 
                     <div class="form_container">
-                        <form action="">
+                        <form method="post">
                             <div class="inputBox">
-                                <input type="text" placeholder="Imię" required>
-                                <input type="text" placeholder="Nazwisko" required>
+                                <input type="text" placeholder="Imię" required name="imie">
+                                <input type="text" placeholder="Nazwisko" required name="nazwisko">
                             </div>
 
-                            <input type="email" placeholder="Email" required>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Treść wiadomości" required></textarea>
+                            <input type="email" placeholder="Email" name="email" required>
+                            <textarea name="content" id="" cols="30" rows="10" placeholder="Treść wiadomości" required></textarea>
                             <input type="submit" value="wyślij">
                         </form>
                     </div>
