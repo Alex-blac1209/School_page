@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="profile">
+        <div class="info">
+            <div class="list-group">
+                {% for u in users %}
+                <a class="list-group-item" href="/admin/users/getUser?id={{ u.id }}">{{ u.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css" />
+{% endblock css %}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="profile">
+        <div class="info">
+            <h3>{{ user.name }}</h3>
+            <p>{{ user.email }}</p>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css" />
+{% endblock css %}
