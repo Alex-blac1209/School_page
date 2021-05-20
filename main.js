@@ -261,16 +261,9 @@ app.get("/profile", (request, response) => {
 
 // Debug Page
 app.get("/debug", async (request, response) => {
-    let debug = "No user";
-    if(request.session.user)
-        debug = request.session.user.name;
-    let table = new Table("user");
-    let users = await table.fetchAll();
+    let asd = "Something";
     
-    response.render("main/debug.html.twig", {
-        debug: debug,
-        users: users,
-    });
+    response.render("main/debug.html.twig");
 });
 
 
