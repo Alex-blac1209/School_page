@@ -5,7 +5,7 @@
         <div class="info">
             <div class="list-group">
                 {% for u in users %}
-                <a class="list-group-item" href="/admin/users/getUser?id={{ u.id }}">{{ u.name }}</a>
+                <a class="list-group-item" href="/admin/users/{{ u.id }}">{{ u.name }}</a>
                 {% endfor %}
             </div>
         </div>

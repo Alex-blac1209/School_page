@@ -81,11 +81,29 @@
                                 <i class="far fa-handshake naw_icon"></i>
                                 <span class="naw_name">Partnerzy</span>
                             </a>
-
-                            <a href="/login" class="naw_link">
-                                <i class="fas fa-sign-in-alt naw_icon"></i>
-                                <span class="naw_name">Zaloguj się</span>
-                            </a>
+                            {% if user %}
+                                {% if user.admin %}
+                                    <a href="/admin" class="naw_link">
+                                        <i class="fas fa-bars"></i>
+                                        <span class="naw_name">
+                                            Panel administratora
+                                        </span>
+                                    </a>
+                                {% endif %}
+                                <a href="/logout" class="naw_link">
+                                    <i class="fas fa-sign-in-alt naw_icon"></i>
+                                    <span class="naw_name">
+                                        Wyloguj się
+                                    </span>
+                                </a>
+                            {% else %}
+                                <a href="/login" class="naw_link">
+                                    <i class="fas fa-sign-in-alt naw_icon"></i>
+                                    <span class="naw_name">
+                                        Zaloguj się
+                                    </span>
+                                </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

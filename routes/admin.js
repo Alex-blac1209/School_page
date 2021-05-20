@@ -38,7 +38,7 @@ exports.addRoutes = app => {
         })
     });
 
-    app.get("/admin/users/getUser", async (request, response) => {
+    app.get("/admin/users/:id", async (request, response) => {
         if(!request.session.user) {
             response.redirect("/login");
             return;
@@ -48,7 +48,7 @@ exports.addRoutes = app => {
             return;
         }
 
-        let user = (await (new Table('user')).fetchBy(["id = ?"], [request.query.id]))[0];
+        let user = (await (new Table('user')).fetchBy(["id = ?"], [request.params["id"]]))[0];
 
         response.render("admin/user.html.twig", {
             user: user,
@@ -109,7 +109,7 @@ exports.addRoutes = app => {
         });
     });
 
-    app.get("/admin/news/getNews", async (request, response) => {
+    app.get("/admin/news/:id", async (request, response) => {
         if(!request.session.user) {
             response.redirect("/login");
             return;
@@ -119,7 +119,7 @@ exports.addRoutes = app => {
             return;
         }
 
-        let news = (await (new Table('news')).fetchBy(["id = ?"], [request.query.id]))[0];
+        let news = (await (new Table('news')).fetchBy(["id = ?"], [request.params["id"]]))[0];
         let author = (await (new Table("user")).fetchBy(["id = ?"], [news.author]))[0];
 
         response.render("admin/oneNews.html.twig", {

@@ -59,6 +59,11 @@ app.set("twig options", {
     strict_variables: false
 });
 
+app.use((request, resource, next) => {
+    resource.locals.user = request.session.user;
+    next();
+});
+
 let em = new EntityManager();
 
 
