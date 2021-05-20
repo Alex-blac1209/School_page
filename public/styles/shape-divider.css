@@ -73,7 +73,48 @@
 }
 
 .custom-shape-divider-bottom-1619073916 .shape-fill {
-    fill: #023E7D;
+    fill: #0466C8;
 }
 
 
+.custom-shape-divider-top-1621515912 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1621515912 svg {
+    position: relative;
+    display: block;
+    width: 200vw;
+    height: 66px;
+}
+
+.custom-shape-divider-top-1621515912 .shape-fill {
+    fill: #002855;
+}
+
+
+.custom-shape-divider-bottom-1621515994 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1621515994 svg {
+    position: relative;
+    display: block;
+    width: 200vw;
+    height: 86px;
+}
+
+.custom-shape-divider-bottom-1621515994 .shape-fill {
+    fill: #023E7D;
+}

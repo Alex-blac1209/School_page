@@ -88,6 +88,20 @@ body > * {
 
 /* ****** MAIN CONTENT ******** */
 
+.additional_info {
+    width: 100vw;
+    padding: 100px 100px;
+    background: linear-gradient(var(--secondary-color), var(--color_4));
+    color: white;
+}
+
+.stats {
+    width: 100vw;
+    padding: 150px 100px;
+    background-color: white;
+    position: relative;
+}
+
 .banner {
     background: linear-gradient( rgba(2,62,125,1) 12%, rgba(47,137,228,1) 90%); 
     min-height: 90vh;
