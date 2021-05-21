@@ -534,9 +534,95 @@ body > * {
 .stats .kont .cardi .face.face2 a:hover {
     background: var(--primary-color);
     color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.sekcja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.sekcja .wrapper {
+    padding-top: 5rem 0;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sekcja .wrapper .card {
+    width: calc(33% - 20px);
+    height: 400px;
+    border-radius: 5px;
+    background: hsla(211, 97%, 25%, 0);
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sekcja .wrapper .card .circle {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    /* border: 8px solid #fff; */
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: default;
+
+}
+
+.sekcja .wrapper .card .circle:hover{
+    transform: scale(1.1);
+}
+
+.sekcja .wrapper .card .circle .box,
+.sekcja .wrapper .card .circle .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.sekcja .wrapper .card .circle .box {
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
     transition: all 0.5s ease;
 }
 
+.sekcja .wrapper .card .circle .box span,
+.sekcja .wrapper .card .text {
+    background: linear-gradient(180deg, rgba(246,250,255,1) 25%, rgba(37,131,237,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sekcja .wrapper .card .circle .box span {
+    font-size: 50px;
+    font-weight: 600;
+    transform: translate(-45%, -50%);
+    transition: all 0.5s ease;
+
+}
+
+.sekcja .wrapper .card .circle:hover .box span{
+    transform: translate(-45%, -50%) scale(1.1);
+}
+
+.sekcja .wrapper .card .text {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 4rem;
+    text-align: center;
+}
 
 .contact {
     min-height: 100vh;
@@ -1187,6 +1273,41 @@ footer span {
 
     .informations_contact {
         height: 330vh;
+    }
+
+}
+
+@media screen and (max-width: 763px) {
+    
+    .sekcja {
+        min-height: 100vh;
+    }
+
+    .sekcja .wrapper {
+        width: 700px;
+        flex-direction: column;
+    }
+    
+    .sekcja .wrapper .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .sekcja {
+        min-height: 150vh;
+    }
+
+    .sekcja .wrapper {
+        width: 500px;
+        flex-direction: column;
+    }
+    
+    .sekcja .wrapper .card {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
 }

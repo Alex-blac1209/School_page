@@ -62,3 +62,23 @@ $(document).ready(function(){
         }
     });
 });
+
+let options = {
+    startAngle: -1.55,
+    size:300,
+    value: 0.978,
+    fill: {gradient: [ 'rgba(0,42,94,1)', 'rgba(183,217,255,1)']}
+}
+$(".sekcja .wrapper .card .circle .bar").circleProgress(options).on('circle-animation-progress', function(event, progerss, stepValue){
+    $(this).parent().find('span').text(String(stepValue.toFixed(2).substr(2)) + '%')
+});
+
+$(".sekcja .wrapper .card .circle .bar.dif").circleProgress(options).on('circle-animation-progress', function(event, progerss, stepValue){
+    $(this).parent().find('span').text(String(stepValue.toFixed(2).substr(2)))
+});
+$(".js .bar").circleProgress({
+    value: 0.78
+});
+$(".react .bar").circleProgress({
+    value: 0.95
+});

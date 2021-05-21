@@ -11,5 +11,5 @@ exports.email = {
 };
 
 exports.receivers = [
-    "jakuboch4@gmail.com",
+    "ttes77673@gmail.com",
 ];
