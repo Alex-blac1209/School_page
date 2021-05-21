@@ -88,6 +88,14 @@ body > * {
 
 /* ****** MAIN CONTENT ******** */
 
+.sekcja {
+    padding: 150px 100px;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(var(--secondary-color), var(--color_4));
+
+}
+
 .additional_info {
     width: 100vw;
     padding: 100px 100px;
