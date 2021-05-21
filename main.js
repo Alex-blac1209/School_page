@@ -18,7 +18,10 @@ var smtpConfig = {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true, // use SSL
-    auth: email
+    auth: email,
+    tls:{
+        rejectUnauthorized:false
+    }
 };
 const transporter = nodemailer.createTransport(smtpConfig);
 transporter.verify(function(error, success) {
