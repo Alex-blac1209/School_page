@@ -334,7 +334,7 @@ body > * {
 }
 
 .informations .kon {
-    width: 1500px;
+    /*width: 1500px;*/
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -347,10 +347,12 @@ body > * {
 
 .informations .kon .card {
     position: relative;
+    padding: 20px;
 }
 
 .informations .kon .card .face {
-    width: 450px;
+    /*width: 450px;*/
+    /*width: 100%;*/
     height: 350px;
     transition: 0.5s;
 }
@@ -448,7 +450,7 @@ body > * {
     display: flex;
     align-items: center;
     min-height: 60vh;
-    width: 1700px;
+    /*width: 1700px;*/
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -546,8 +548,8 @@ body > * {
 }
 
 .sekcja .wrapper {
-    padding-top: 5rem 0;
-    width: 1500px;
+    padding: 200px 0;
+    /*width: 1500px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
