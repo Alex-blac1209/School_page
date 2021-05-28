@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block title %} Rodzice || Dokumenty {% endblock title %}
+{% block css %}<link rel="stylesheet" type="text/css" href="/styles/documents.css" />{% endblock css %}
 {% block body %}
     <div class="banner">
         <div class="banner_container row">
@@ -9,7 +10,7 @@
                 <i class="fas fa-bars" id="banner_toggle"></i>
             </div>
         </div>
-        <div class="main_content row">
+        <div class="main_content row" style="padding: 0 5rem;">
             <div class="text col-md-12 col-lg-6">
                 <h1>DOWIEDZ SIĘ CO NOWEGO</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat ipsum nobis nostrum enim iusto voluptate magnam sapiente praesentium illo!</p>
@@ -26,6 +27,52 @@
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
         </div>
+
+        <div class="accordion" style="padding: 3rem 0;">
+            <div class="accadd">
+                <div class="contentBx">
+                    <div class="label">Pomoce</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Rodzice/Pomoce/zespol_pomocy_psychologiczno_pedagogicznej.pdf"> Informacje na temat zespołu pomocy psychologiczno-pedagogicznej</a></li>
+                            <li><a href="school_documents/Rodzice/Pomoce/opieka_stomatologiczna.pdf"> Opieka stomatologiczna</a></li>
+                            <li><a href="school_documents/Rodzice/Pomoce/oswiadczenie_wyprawka_szkolna.doc"> Oświadczenie o wyprawce szkolnej</a></li>
+                            <li><a href="school_documents/Rodzice/Pomoce/oswiadczenie_dotyczace_wyplaty_przelewem.doc"> Oświadczenie dotyczące wypłaty przelewam wyprawki szkolnej</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Ubezpieczenie</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Rodzice/Ubezpieczenie/Ubezpieczenie_szkolne_EDU_PLUS_2020_2021.pdf"> Ubezpieczenie szkolne EDU PLUS na lata 2020/2021</a></li>
+                            <li><a href="school_documents/Rodzice/Ubezpieczenie/informacje_o_produkcie_EDU_PLUS.pdf"> Szczegółowe informacje o ubezpieczeniu EDU PLUS</a></li>
+                            <li><a href="school_documents/Rodzice/Ubezpieczenie/instrukcja_do_polisy.pdf"> Instrukcja do polisy</a></li>
+                            <li><a href="school_documents/Rodzice/Ubezpieczenie/lista_oplacajacych_skladke_ubezpieczeniowa.docx"> Lista opłacających składkę ubezpieczeniową</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Rada rodziców</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="https://new.kasprzak.edu.pl/wp-content/uploads/Regulamin_Rady_Rodzicow.pdf" target="_blank"> Regulamin Rady Rodziców</a></li>
+                            <li><a href="school_documents/Rodzice/Rada_rodzicow/Konto_Rady_Rodzicow.pdf"> Informacje o koncie Rady Rodziców</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Inne</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Rodzice/Inne/harmonogram_zebran_2020_2021.pdf"> Harmonogram zebrań na lata 2020/2021</a></li>
+                            <li><a href="school_documents/Rodzice/Inne/Wspolpraca_z_Rodzicami.doc"> Współpraca z rodzicami</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="custom-shape-divider-bottom-1619073916">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -33,3 +80,4 @@
         </div>
     </div>
 {% endblock body %}
+{% block js %}<script src="/scripts/documents.js"></script>{% endblock js %}
