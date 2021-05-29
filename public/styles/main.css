@@ -357,6 +357,10 @@ body > * {
     transition: 0.5s;
 }
 
+.informations .kon .card.one {
+    padding-left: 7rem;
+}
+
 .informations .kon .card .face.face1 {
     position: relative;
     background: var(--white);
@@ -1134,6 +1138,11 @@ footer span {
 }
 
 @media screen and (max-width: 1600px){
+    
+    .informations .kon .card.one {
+        padding-left: 1rem;
+    }
+    
     .banner_contact {
         height: 150vh;
     }
@@ -1267,7 +1276,7 @@ footer span {
         width: 6rem;
         height: 6rem;
     }
-    
+
 }
 
 
