@@ -90,7 +90,7 @@ body > * {
 
 .sekcja {
     padding: 150px 100px;
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
     background: linear-gradient(var(--secondary-color), var(--color_4));
 
@@ -160,12 +160,12 @@ body > * {
     align-items: center;
     margin: 0;
     padding: 0;
-    max-width: 100vw;
+    /* max-width: 100vw; */
 }
 
 .banner .main_content .text {
     align-items: center;
-    width: 30vw;
+    /* width: 30vw; */
     text-align: center;
     color: var(--white);
 }
@@ -518,7 +518,7 @@ body > * {
     transform: translateY(100%) rotateX(90deg);
     color: var(--primary-color);
     line-height: 2em;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .stats .kont .cardi:hover .face.face2 {
@@ -530,7 +530,7 @@ body > * {
     background: #fff;
     border: 1px solid var(--primary-color);
     padding: 10px;
-    margin: 20px 0 0;
+    margin: 15px 0 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
@@ -550,10 +550,12 @@ body > * {
     align-items: center;
     min-height: 80vh;
     padding: 20px;
+
 }
 
 .sekcja .wrapper {
     padding: 200px 0;
+    margin: 0;
     /*width: 1500px;*/
     display: flex;
     justify-content: space-between;
@@ -575,8 +577,8 @@ body > * {
 
 .sekcja .wrapper .card .circle {
     position: relative;
-    height: 300px;
-    width: 300px;
+    /* height: 300px; */
+    /* width: 300px; */
     /* border: 8px solid #fff; */
     border-radius: 50%;
     transition: all 0.5s ease;
@@ -597,7 +599,7 @@ body > * {
 
 .sekcja .wrapper .card .circle .box {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: all 0.5s ease;
@@ -1291,18 +1293,43 @@ footer span {
 
 @media screen and (max-width: 763px) {
     
+     .banner_container p {
+        padding-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .banner .main_content {
+        padding-right: 0;
+    }
+
+    .banner .main_content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner .main_content p {
+        /* max-width: 400px; */
+        font-size: 1rem;
+        padding-bottom: 3rem;
+    } 
+
+    .stats .heading {
+        font-size: 2rem;
+    }
+
     .sekcja {
         min-height: 100vh;
     }
 
     .sekcja .wrapper {
-        width: 700px;
+        /* width: 700px; */
         flex-direction: column;
     }
     
     .sekcja .wrapper .card {
         width: calc(50% - 20px);
         margin-bottom: 20px;
+        padding: 0;
     }
 }
 
@@ -1313,12 +1340,12 @@ footer span {
     }
 
     .sekcja .wrapper {
-        width: 500px;
+        /* width: 500px; */
         flex-direction: column;
     }
     
     .sekcja .wrapper .card {
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 20px;
     }
 
@@ -1343,5 +1370,9 @@ footer span {
 
     .add_contact_info .box-container .box:nth-child(5){
         width: 90%;
+    }
+
+    .stats .heading {
+        font-size: 1.5rem;
     }
 }
