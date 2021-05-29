@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block title %} Wszyscy || Dokumenty {% endblock title %}
+{% block css %}<link rel="stylesheet" type="text/css" href="/styles/documents.css" />{% endblock css %}
 {% block body %}
     <div class="banner">
         <div class="banner_container row">
@@ -9,7 +10,7 @@
                 <i class="fas fa-bars" id="banner_toggle"></i>
             </div>
         </div>
-        <div class="main_content row">
+        <div class="main_content row" style="padding: 0 5rem;padding-bottom:10rem;">
             <div class="text col-md-12 col-lg-6">
                 <h1>DOWIEDZ SIĘ CO NOWEGO</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat ipsum nobis nostrum enim iusto voluptate magnam sapiente praesentium illo!</p>
@@ -26,6 +27,155 @@
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
         </div>
+
+        <div class="accordion" style="padding: 3rem 0;">
+            <div class="accadd">
+                <div class="contentBx">
+                    <div class="label" id="RODO">RODO</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/RODO/INFORMACJA O OCHRONIE I PRZETWARZANIU.pdf" target="_blank"> Informacja o danych i przetwarzaniu danych osobowych</a></li>
+                            <li><a href="school_documents/Wszyscy/RODO/KLAUZULA _INFORMACYJNA O PRZETWARZANIU DANYCH OSOBOWYCH.pdf" target="_blank"> Klauzula informacyjna o przetwarzaniu danych osobowych</a></li>
+                            <li><a href="school_documents/Wszyscy/RODO/klauzula_informacyjna_dane_osobowe.pdf" target="_blank"> Klauzula informacyjna o danych osobowych</a></li>
+                            <li><a href="school_documents/Wszyscy/RODO/klauzula_informacyjna.pdf" target="_blank"> Klauzula informacyjna</a></li>
+                            <li><a href="school_documents/Wszyscy/RODO/monitoring_wizyjny.pdf" target="_blank"> Monitoring wizyjny</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Bezpieczna szkoła</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Bezpieczna_szkola/bezpieczna_szkola_akty_prawne.pdf" target="_blank"> Bezpieczna szkoła - akty prawne</a></li>
+                            <li><a href="school_documents/Wszyscy/Bezpieczna_szkola/bezpieczna_szkola_zalecenia.pdf" target="_blank"> Bezpieczna szkoła - zalecenia</a></li>
+                            <li><a href="https://bezpiecznaszkola.men.gov.pl/" target="_blank"> Więcej informacji na temat bezpiecznej szkoły</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label"> COVID-19 </div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Covid/dzialania_MEN.docx" target="_blank"> Działania MEN w zakresie organizacji roku szkolnego 2020/2021 w warunkach epidemii</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/podejrzenie_zakażenia.docx" target="_blank"> Procedura postępowania na wypadek podejrzenia zakażenia wirusem COVID-19</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/procedura_funkcjonowania_szkoly.docx" target="_blank"> Procedura funkcjonowania szkoły od 1 września 2020r.</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/regulamin na czas pandemii.docx" target="_blank"> Regulamin na czas pandemii</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/wazne_telefony.docx" target="_blank"> Ważne telefony</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/wytyczne_MEN_MZ_GIS_dla_placowek.pdf" target="_blank"> Wytyczne MEN, MZ i GIS dla publicznych i niepublicznych szkół i placówek od 1 września 2020r.</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/Szczepienia_nauczycieli/Ogólne_zasady_szczepien.doc" target="_blank"> Ogólne zasady dotyczące procesu szczepień nauczycieli</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/Szczepienia_nauczycieli/pismo_w_sprawie_szczepien.pdf" target="_blank"> Pismo w sprawie szczepień</a></li>
+                            <li><a href="school_documents/Wszyscy/Covid/Szczepienia_nauczycieli/Wstepny_wywiad.pdf" target="_blank"> Kwestionariusz wstępnego wywiadu przesiewowego przed szczepieniem osoby dorosłej przeciw COVID-19</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label"> Regulaminy oraz statut </div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Statut/STATUT_BSIst_nr_57_2019_.pdf" target="_blank"> Statut Branżowej Szkoły I stopnia nr 57 w ZS nr 36 im. Marcina Kasprzaka w Warszawie</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Statut/STATUT_TEnr1_2019_.pdf" target="_blank"> Statut Technikum Elektronicznego nr 1 w ZS nr 36 im. Marcina Kasprzaka w Warszawie</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Statut/STATUT_Zespolu_2019_.pdf" target="_blank"> Statut ZS nr 36 im. Marcina Kasprzaka w Warszawie</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Regulamin boiska.pdf" target="_blank"> Regulamin korzystania z boiska szkolnego</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/regulamin_nauki_zdalnej.pdf" target="_blank"> Regulamin przebiegania nauki zdalnej</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Regulamin_PPK.pdf" target="_blank"> Regulamin prowadzenia oraz zarządzania pracowniczymi planami kapitałowymi</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/regulamin_rekrutacja_n_foton_ - Projekty Unijne.pdf" target="_blank"> Regulamin rekrutacji nauczycieli/nauczycielek do prowadzenia zajęć w ramach projektu ,,Kształecenie zawodowe uczniów w dziedzinie fotoniki-interdyscyplinarnie łączącej dokonania optyki, elektroniki i informatyki"</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Regulamin_rowery.pdf" target="_blank"> Regulamin korzystania z parkingu rowerowego na terenie szkoły</a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/Regulamin_szafki.pdf" target="_blank"> Regulamin korzystania z szafek szkolnych </a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/rodo_zdalne_nauczanie.pdf" target="_blank"> RODO w zdalnym nauczaniu </a></li>
+                            <li><a href="school_documents/Wszyscy/Ogolne_regulaminy/WSO1.pdf" target="_blank"> Wewnątrzszkolny System Oceniania (WSO)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Przedmiotowe Zasady Oceniania</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/PSO/Przedmiotowy System Oceniania Religii.pdf" target="_blank"> PZO Religii</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/Przedmiotowy System Oceniania Wychowania Fizycznego.pdf" target="_blank"> PZO Wychowania Fizycznego</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PSO_hist_i_spol.pdf"> PZO Histori i społeczeństwa</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PSO_historia_gimn.pdf" target="_blank"> PZO Historii (stary program nauczania)</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PSO_historia_podst.pdf" target="_blank"> PZO Historii (nowy program nauczania)</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PSO_jezyki_obce.pdf" target="_blank"> PZO Języki Obce</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PSO_matematyka.pdf" target="_blank"> PZO Matematyka</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_biologia.pdf" target="_blank"> PZO Biologia</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_elektroniczne_mechatroniczne_jednostki_modułowe.pdf" target="_blank"> PZO Elektroniczne/Mechatroniczne jednostki modułowe</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_fizyka.pdf" target="_blank"> PZO Fizyka</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_geografia.pdf" target="_blank"> PZO Geografia</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_Informatyka.docx" target="_blank"> PZO Informatyka</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_j_polski.pdf" target="_blank"> PZO Język polski</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_plastyka.pdf" target="_blank"> PZO Plastyka</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_przedsiebiorczosc.pdf" target="_blank"> PZO Przedsiębiorczość</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_wok.pdf" target="_blank"> PZO WOK</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/PZO_WOS.pdf" target="_blank"> PZO WOS</a></li>
+                            <li><a href="school_documents/Wszyscy/PSO/zawodowe_jednostki_modulowe.pdf" target="_blank"> PZO Zwodowe jednostki modułowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Ewaluacja</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Ewaluacja/harmonogram.pdf" target="_blank"> Harmonogram Zewnętrznej Ewaluacji w ZS nr 36 im. Marcina Kasprzaka</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Edukacja ekologiczna</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Edukacja_ekologiczna/Eko_z_Twoją_wolą.docx" target="_blank"> ,,Eko z Twoją Wolą"</a></li>
+                            <li><a href="school_documents/Wszyscy/Edukacja_ekologiczna/plan_dzialan_eko_z_wola.xlsx" target="_blank"> Paln działania ,,Eko z twoją Wolą"</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Pomoce</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Pomoce/Stypendium szkolne OPS.docx" target="_blank"> Stypendium Szkolne OPS</a></li>
+                            <li><a href="school_documents/Wszyscy/Pomoce/WSDZ_dla_ZS_36.pdf" target="_blank"> Wewnątrzszkolny System Doradztwa Zawodowego w ZS nr 36 im. Marcina Kasprzaka w Warszawie</a></li>
+                            <li><a href="school_documents/Wszyscy/Pomoce/zespol_pomocy_psychologiczno_pedagogicznej.pdf" target="_blank"> Zespół pomocy psychologiczno-pedagogicznej</a></li>
+                            <li><a href="http://www.edukacja.warszawa.pl/dla-ucznia-i-rodzica/pomoc-socjalna-dla-uczniow" target="_blank"> Pomoc socjalna dla uczniów</a></li>
+                            <li><a href="http://edukacja.warszawa.pl/projekty-i-inicjatywy/program-wars-i-sawa" target="_blank"> Szkolny program wspomagania uzdolnionych</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Matura 2021</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Matury2021/deklaracja maturalna_2020_2021.docx" target="_blank"> Deklaracja maturalna 2020/2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Matury2021/Informator Matury _2021.pdf" target="_blank"> Informator matury 2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Matury2021/Instrukcje-dla-zdających-korzystajacych-z-komputera_matura_2021.pdf" target="_blank"> Instrukcje dla zdających korzystajacych z komputera - matura 2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Matury2021/Materiały_dla_przewodniczących_zespołów_nadzorujących_2021.pdf" target="_blank"> Materiały dla przewodniczących zespołów nadzorujących 2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Matury2021/unieważnienie_egzaminu_matura_2021.pdf" target="_blank"> Unieważnienie egzaminu - matura 2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Matury2021/wytyczne dla egzaminu z informatyki_matura_2021.pdf" target="_blank"> Wytyczne dla egzaminu z informatyki - matura 2021</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Podręczniki</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Podreczniki/podreczniki_kl_1_2020.pdf" target="_blank"> Wykaz podręczników dla klas 1</a></li>
+                            <li><a href="school_documents/Wszyscy/Podreczniki/wykaz_podrecznikow_kl_2.pdf" target="_blank"> Wykaz podręczników dla klas 2 </a></li>
+                            <li><a href="school_documents/Wszyscy/Podreczniki/wykaz_podrecznikow_kl_3.pdf" target="_blank"> Wykaz podręczników dla klas 3 </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Inne</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/Wszyscy/Inne/kalendarz_r_szk_2020_2021.pdf" target="_blank"> Kalendarz roku szkolnego 2020/2021</a></li>
+                            <li><a href="school_documents/Wszyscy/Inne/zajecia_dodatkowe.pdf" target="_blank"> Zajęcia dodatkowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="custom-shape-divider-bottom-1619073916">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -33,3 +183,4 @@
         </div>
     </div>
 {% endblock body %}
+{% block js %}<script src="/scripts/documents.js"></script>{% endblock js %}

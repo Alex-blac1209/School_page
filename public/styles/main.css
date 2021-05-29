@@ -126,6 +126,7 @@ body > * {
 }
 
 .banner_container {
+    margin-right: 0;
     padding: 2rem 4rem;
     color: white;
     align-items: center;
@@ -837,7 +838,7 @@ body > * {
 
 .boss_info {
     display: inline-block;
-    padding: 100px 10rem;
+    padding: 100px ;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
