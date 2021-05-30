@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+{% block title %} Uczniowie || Dokumenty {% endblock title %}
+{% block css %}<link rel="stylesheet" type="text/css" href="/styles/documents.css" />{% endblock css %}
+{% block body %}
+    <div class="banner">
+        <div class="banner_container row">
+            <a href="/" class="banner_logo col-sm-12 col-md-2 col-lg-1 text-center"><img src="images/logo_k.png" alt="Logo Kasprzaka" class="banner_img"></a>
+            <p class="col-sm-12 col-md-10 col-lg-11">ZESPÓŁ SZKÓŁ NR 36 IM. MARCINA KASPRZAKA</p>
+            <div class="banner_toggle">
+                <i class="fas fa-bars" id="banner_toggle"></i>
+            </div>
+        </div>
+        <div class="main_content row" style="padding: 0 5rem; padding-bottom: 10rem;">
+            <div class="text col-md-12 col-lg-6">
+                <h1>SZUFLADA DLA KANDYDATÓW</h1>
+                <p>Drodzy Kandydaci, to tutaj znajdziecie potrzebne wam dokumenty, aby zacząć nabór do naszej szkoły. Jeżeli potrzebujecie szczegółowych informacji, znajdziecie je tutaj.</p>
+            </div>
+            <img class="col-md-12 col-lg-6" src="images/undraw_analyze_17kw.svg" alt="główne zdj">
+        </div>
+    </div>
+
+
+
+    <div class="informations">
+        <div class="custom-shape-divider-top-1619165810">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="accordion" style="padding: 3rem 0;">
+            <div class="accadd">
+                <div class="contentBx">
+                    <div class="label">Dokumenty do wypełnienia</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/uczniowie/Dla_Kandydatow/kwestionariusz_osobowy_ucznia_ZS_36.pdf" target="_blank"> Kwestionariusz osobowy ucznia ZS nr 36 im. Marcina Kasprzaka</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Rekrutacja i harmonogramy</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="school_documents/uczniowie/Dla_Kandydatow/Planowany_nabor_2021_2022.pdf" target="_blank"> Planowany nabór klas w latach 2021/2022</a></li>
+                            <li><a href="school_documents/uczniowie/Dla_Kandydatow/Regulamin_Rekrutacji_2021_2022.pdf" target="_blank"> Regulamin rekrutacji w latach 2021/2022</a></li>
+                            <li><a href="school_documents/uczniowie/Dla_Kandydatow/harmonogram_dzialan_kandydata_2021.pdf" target="_blank"> Harmonogram działań kandydata 2021</a></li>
+                            <li><a href="school_documents/uczniowie/Dla_Kandydatow/badania_lekarskie.pdf" target="_blank"> Lista miejsc, w których można wykonać bezpłatnie badanie (wyznaczonych przez Mazowiecki Wojewódzki Ośrodek Medycyny Pracy)</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Informacje o szkole</div>
+                    <div class="content">
+                        <ul>
+                            <li><a href="" target="_blank"> Technik informatyk</a></li>
+                            <li><a href="" target="_blank"> Technik mechatronik</a></li>
+                            <li><a href="" target="_blank"> Technik elektronik</a></li>
+                            <li><a href="" target="_blank"> Technik programista</a></li>
+                            <li><a href="https://youtu.be/RDdBNgKRxJk" target="_blank"> Dzień otwarty z dnia 20.03.2021</a></li>
+                            <li><a href="https://youtu.be/yamcoFBcFwo" target="_blank"> Dzień otwarty z dnia 21.04.2021</a></li>
+                            <li><a href="/partners" target="_blank"> Nasi partnerzy</a></li>
+                            <li><a href="" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+        <div class="custom-shape-divider-bottom-1619073916">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+{% endblock body %}
+{% block js %}<script src="/scripts/documents.js"></script>{% endblock js %}
