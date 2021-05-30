@@ -1,0 +1,93 @@
+.druh {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: linear-gradient(var(--secondary-color), var(--color_4));
+    padding-left: 5rem;
+}
+
+.druh .box {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background: white;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.druh .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 16, 48, 0.9);
+}
+
+.druh .box .imgBx.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.druh .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.druh .box .imgBx.active img {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+}
+
+.druh .box .imgBx h2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.druh .box .imgBx.active h2 {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+    letter-spacing: 4px;
+}
+
+.druh .box .imgBx .content {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(10, 16, 48, 0.8);
+    padding: 20px;
+    color: var(--white);
+    transform: translateY(100%);
+    font-size: 1.5rem;
+}
+
+.druh .box .imgBx.active .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5s;
+}

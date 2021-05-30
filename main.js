@@ -188,6 +188,44 @@ app.get("/gallery", (request, response) => {
     response.render("main/gallery.html.twig");
 });
 
+//Subpages for gallery page
+
+app.get("/szkola", (request, response) => {
+    response.render("main/school_img.html.twig");
+});
+
+app.get("/dzien_sportu", (request, response) => {
+    response.render("main/sport_day_img.html.twig");
+});
+
+app.get("/wolontariat", (request, response) => {
+    response.render("main/voul_img.html.twig");
+});
+
+app.get("/krwiodastwo", (request, response) => {
+    response.render("main/blood_donation_img.html.twig");
+});
+
+app.get("/wycieczki", (request, response) => {
+    response.render("main/trips_img.html.twig");
+});
+
+app.get("/wydarzenia", (request, response) => {
+    response.render("main/events_img.html.twig");
+});
+
+app.get("/zawody_sportowe", (request, response) => {
+    response.render("main/sport_comp_img.html.twig");
+});
+
+app.get("/siatkowka", (request, response) => {
+    response.render("main/volleyball_img.html.twig");
+});
+
+app.get("/pilka_reczna", (request, response) => {
+    response.render("main/handball_img.html.twig");
+});
+
 //Partners 
 app.get("/partners", (request, response) => {
     response.render("main/partners.html.twig");
