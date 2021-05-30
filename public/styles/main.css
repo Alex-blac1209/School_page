@@ -1131,6 +1131,16 @@ footer span {
     padding-left: 1rem;
 }
 
+footer i {
+    padding-left: 30px;
+    font-size: 2.5rem;
+}
+
+footer i:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 
 /* Help to reduce chance for site to behave diffrently onload */
 .preload * {
