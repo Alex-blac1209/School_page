@@ -140,8 +140,80 @@
     transition: all 0.3s ease-in-out;
 }
 
+.sekcja {
+    min-height: 120vh;
+}
+
+.sekcja {
+    align-items: flex-start;
+}
+
+.sekcja .heading {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-top: 10rem;
+
+}
+
+.heading span {
+    color: var(--color_4);
+    text-transform: uppercase;
+    
+}
+
+table {
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 900px;
+    height: 200px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),  -1px -1px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+#header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+tr:hover {
+    background: var(--secondary-color);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),  -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 840px) {
+    #btns {
+        padding-bottom: 5rem;
+    }
+    
     .przy {
         width: 100%;
+    }
+
+    .sekcja {
+        min-height: 120vh;
+    }
+
+    table {
+        width: 50%;
     }
 }
