@@ -200,7 +200,70 @@ tr:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),  -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 840px) {
+.stats {
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+.stats .heading {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    
+
+}
+
+.stats .heading span {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    
+}
+
+.stats .exams_online {
+    margin-top: 4rem;
+}
+
+.stats .exams_online p {
+    align-items: center;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+.stats .exams_online p::first-letter {
+    font-size: 2rem;
+    color: var(--color_4);
+}
+
+.stats .exams_online #test_button {
+    border: 2px solid var(--primary-color);
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.stats .exams_online #test_button:hover {
+    background: #fff;
+    color: var(--primary-color);
+    transition: all .3s ease-in-out;
+}
+
+.stats .exams_online .zdj {
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .stats .exams_online .zdj {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
     #btns {
         padding-bottom: 5rem;
     }
@@ -210,10 +273,22 @@ tr:hover {
     }
 
     .sekcja {
-        min-height: 120vh;
+        min-height: 200vh;
     }
 
     table {
         width: 50%;
+    }
+
+    .stats .exams_online {
+        margin-top: 0rem;
+    }
+
+    .stats .exams_online p {
+        padding-bottom: 2rem;
+    }
+
+    .stats .exams_online .text {
+        padding-bottom: 5rem;
     }
 }
