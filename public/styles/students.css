@@ -1,0 +1,141 @@
+#btns *{
+    transition: all 0.3s ease-in-out;
+}
+
+#btns {
+    min-height: 170vh;
+}
+
+#btns {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow:row wrap;
+    flex-wrap: wrap;
+}
+
+.przy {
+    padding: 15px 0;
+    width: 28%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.przy .przy-top h4::before,
+.przy-inner,
+.przy-inner:hover .przy-bottom {
+    background: var(--secondary-color);
+}
+
+.przy .przy-inner {
+    position: relative;
+    min-height: 400px;
+    border: 2px solid var(--secondary-color);
+    overflow: hidden;
+}
+
+.przy .przy-top {
+    width: 100%;
+    padding: 70px 0;
+    position: absolute;
+    top: 0px;
+    background: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.przy .przy-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: -370px;
+    height: 100%;
+    padding: 15px 15px 20px 15px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.przy .przy-top h4 {
+    margin-top: 25px;
+    position: relative;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.przy .przy-bottom h4 {
+    font-weight: 400;
+    color: var(--white);
+    margin: 5px 0 5px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.przy .przy-top h4::before{
+    content: '';
+    margin: -2px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -18px;
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: var(--secondary-color);
+}
+
+.przy a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    border: 2px solid #fff;
+    padding: 10px 10px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.przy .przy-bottom a {
+    font-size: 1em;
+    margin-top: 5rem;
+}
+
+.przy .przy-bottom a:hover {
+    background: white;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.przy .przy-top .fas {
+    font-size: 3.5em;
+    line-height: 1.3em;
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+    
+}
+
+.przy .przy-bottom .fas{
+    font-size: 45px;
+    line-height: 70px;
+    color: white;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.przy .przy-bottom p {
+    padding: 0px 5px;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.przy .przy-inner:hover .przy-bottom {
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.przy .przy-inner:hover .przy-top {
+    top: -200px;
+    transition: all 0.3s ease-in-out;
+}
