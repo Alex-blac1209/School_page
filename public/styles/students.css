@@ -139,3 +139,9 @@
     top: -200px;
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 840px) {
+    .przy {
+        width: 100%;
+    }
+}
