@@ -37,6 +37,11 @@
     padding-left: 0;
 }
 
+.profile .info .main_cont.four {
+    padding-left: 0;
+    padding-bottom: 1rem;
+}
+
 .profile .info .main_cont h3 {
     color: var(--white);
     text-transform: uppercase;
@@ -46,6 +51,10 @@
 }
 
 .profile .info .main_cont.two h3 {
+    font-size: 2rem;
+}
+
+.profile .info .main_cont.four h3 {
     font-size: 2rem;
 }
 
@@ -104,6 +113,10 @@
     font-weight: 300;
 }
 
+.profile .info .main_cont.four p {
+    color: var(--white);
+}
+
 .profile .info .main_cont.three .us_inf span {
     text-transform: uppercase;
     font-weight: 500;
@@ -133,6 +146,10 @@
         font-size: 1.1rem;
     }
 
+    .profile .info .main_cont.four h3 {
+        font-size: 1.1rem;
+    }
+
     .profile .info .main_cont.three .us_inf span {
         font-size: 1rem;
     }
@@ -140,5 +157,9 @@
     .profile .info .main_cont.three .us_inf p {
         font-size: 0.9rem;
         text-align: center;
+    }
+
+    .profile .info .main_cont.four p {
+        font-size: 0.9rem;
     }
 }
