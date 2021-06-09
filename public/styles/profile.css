@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
 }
 .profile .info {
     background: linear-gradient(var(--primary-color) -20%, var(--secondary-color));
@@ -16,4 +20,53 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    min-height: 50vh;
+    flex-flow: row wrap;
+}
+
+.profile .info .main_cont {
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+.profile .info .main_cont h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.profile .info .main_cont a {
+    display: block;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow:  inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.profile .info .main_cont a:hover {
+    color:rgba(20, 182, 211, 0.644);
+}
+
+.profile .info .img img {
+    width: 70%;
+    height: 70%;
+    padding-right: 0;
+}
+
+@media (max-width:1024px) {
+    .profile {
+        padding-left: 0;
+        width: 100%;
+    }
+    .profile .info .main_cont {
+        padding-left: 0;
+    }
 }

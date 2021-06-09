@@ -257,6 +257,16 @@ tr:hover {
     align-items: center;
 }
 
+.meh {
+    min-height: 100vh;
+    padding: 150px 100px;
+    position: relative;
+    background: linear-gradient(var(--secondary-color), var(--color_4));
+}
+
+.meh h1{
+    color: var(--white);
+}
 @media screen and (max-width: 1300px) {
     .stats .exams_online .zdj {
         padding-top: 10rem;
