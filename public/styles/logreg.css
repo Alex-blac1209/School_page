@@ -64,3 +64,68 @@
 .logreg .form a:hover {
     color: rgba(0, 27, 66, 0.8);
 }
+
+.logreg .form .main_cont.five{
+    padding-left: 0;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+.logreg .form .main_cont.five h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2rem;
+    word-spacing: 4px;
+}
+
+.logreg .form .main_cont.five input {
+    padding: 10px 10px;
+    text-align: center;
+    border: none;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.logreg .form .main_cont.five textarea {
+    width: 220px;
+    height: 100px;
+    resize: none;
+    background-color: var(--secondary-color);
+    box-shadow:  inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.logreg .form .main_cont.five textarea::-webkit-scrollbar {
+    width: 0.9rem;
+}
+
+.logreg .form .main_cont.five textarea::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+.logreg .form .main_cont.five textarea::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: .5rem;
+}
+
+.logreg .form .main_cont.five textarea::placeholder {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.logreg .form .main_cont.five input[type = "submit"] {
+    border-radius: 15px;
+    box-shadow:none;
+    padding: 10px 20px;
+    box-shadow:  inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
