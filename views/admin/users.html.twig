@@ -4,9 +4,12 @@
     <div class="profile">
         <div class="info">
             <div class="list-group">
-                {% for u in users %}
-                <a class="list-group-item" href="/admin/users/{{ u.id }}">{{ u.name }}</a>
-                {% endfor %}
+                <div class="main_cont two">
+                    <h3>Oto lista bieżących użytkowników:</h3>
+                    {% for u in users %}
+                    <a class="list-group-item" href="/admin/users/{{ u.id }}">{{ u.name }}</a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

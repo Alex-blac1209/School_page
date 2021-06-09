@@ -29,12 +29,20 @@
     padding-bottom: 5rem;
 }
 
+.profile .info .main_cont.two {
+    padding-left: 0;
+}
+
 .profile .info .main_cont h3 {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 2.5rem;
+}
+
+.profile .info .main_cont.two h3 {
+    font-size: 2rem;
 }
 
 .profile .info .main_cont a {
@@ -49,6 +57,20 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 0;
+}
+
+.profile .info .main_cont.two a {
+    background: none;
+    border-radius: 15px;
+    color: var(--white);
+    padding-top: 10px;
+}
+
+.profile .info .main_cont.two a:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    background-color: rgba(67, 134, 211, 0.644);
+    color: var(--color_4);
 }
 
 .profile .info .main_cont a:hover {
