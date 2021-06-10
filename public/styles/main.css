@@ -1328,6 +1328,10 @@ footer i:hover {
     .sekcja .wrapper .card {
         margin-top: 3rem;
     }
+
+    .statistics {
+        min-height: 60vh;
+    }
 }
 
 
@@ -1379,6 +1383,10 @@ footer i:hover {
         margin-bottom: 20px;
         padding: 0;
     }
+
+    .boss_info {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1422,5 +1430,9 @@ footer i:hover {
 
     .stats .heading {
         font-size: 1.5rem;
+    }
+
+    .statistics {
+        min-height: 70vh;
     }
 }
