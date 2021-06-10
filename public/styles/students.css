@@ -322,6 +322,23 @@ tr:hover {
     color: var(--white);
     flex-wrap: wrap;
 }
+
+.meh a {
+    color: white; 
+    margin-top: 2rem;
+    border: 2px inset white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 200px;
+    margin: 2rem auto;
+}
+
+.meh a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
     .stats .exams_online .zdj {
         padding-top: 10rem;
