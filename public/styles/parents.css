@@ -1,0 +1,132 @@
+.container {
+    padding: 5rem auto;
+    min-height: 125vh;
+    margin-top: 5rem;
+}
+
+.circle {
+    padding: 16px 16px;
+    border-radius: 30%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    max-width: 60px;
+    z-index: 2;
+}
+
+h2 span{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.connecting-line.row .col-2 {
+    align-self: stretch;
+}
+
+.connecting-line.row .col-2::after {
+    content: '';
+    position: absolute;
+    border-left: 3px solid var(--primary-color);
+    z-index: 1;
+}
+
+.connecting-line.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}
+
+.connecting-line.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+}
+
+.connecting-line.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+}
+
+.timeline div {
+    padding: 0;
+    height: 40px;
+}
+
+.timeline hr {
+    border-top: 3px solid var(--primary-color);
+    margin: 0;
+    top: 17px;
+    position: relative;
+}
+
+.timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.timeline .corner {
+    border: 3px solid var(--primary-color);
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.timeline .top-right {
+    left: 50%;
+    top: -50%;
+}
+
+.timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+    left: -50%;
+    top: -51%;
+}
+
+.timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+}
+
+.container a {
+    border-radius: 15px;
+    flex-wrap: wrap;
+    border:2px inset var(--primary-color);
+    text-transform: uppercase;
+    color: var(--primary-color);
+    width: 200px;
+    margin-bottom: 5rem;
+    padding: 10px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-weight:500;
+}
+
+.container a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width:768px){
+    .container {
+        min-height: 150vh ;
+    }
+}
+
+@media (max-width:520px){
+    .container {
+        min-height: 200vh ;
+    }
+}

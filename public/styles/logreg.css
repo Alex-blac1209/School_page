@@ -32,6 +32,11 @@
     color: white;
     border: 2px var(--color_5) solid;
     transition: transform .3s, box-shadow .3s;
+    border: none;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 
 .logreg input[type = "text"]:focus,
@@ -50,8 +55,12 @@
     background-color: var(--primary-color);
     padding: 10px 20px;
     border-radius: 20px;
-    border: 2px var(--color_5) solid;
+    border: none;
     color: var(--white);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
     transition: transform .3s, box-shadow .3s;
 }
 
