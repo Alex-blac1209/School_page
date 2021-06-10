@@ -82,3 +82,10 @@ $(".js .bar").circleProgress({
 $(".react .bar").circleProgress({
     value: 0.95
 });
+
+let more = document.querySelectorAll('.more');
+for(let i = 0; i<more.length; i++){
+    more[i].addEventListener('click', function(){
+        more[i].parentNode.classList.toggle('active')
+    })
+}

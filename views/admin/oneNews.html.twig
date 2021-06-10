@@ -3,9 +3,11 @@
 {% block body %}
     <div class="profile">
         <div class="info">
-            <h3>{{ news.title }}</h3>
-            <p>{{ news.description }}</p>
-            <p>Autor: {{ author.name }}</p>
+            <div class="main_cont six">
+                <h3>{{ news.title }}</h3>
+                <p>{{ news.description }}</p>
+                <p>Autor: {{ author.name }}</p>
+            </div>
         </div>
     </div>
 {% endblock body %}

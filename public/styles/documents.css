@@ -89,6 +89,11 @@
 .kontener .karta:nth-child(1) .pudełko .zawartosc a,
 .kontener .karta:nth-child(1) .pudełko .zawartosc .icon {
     background: var(--secondary-color);
+    
+}
+
+.kontener .karta:nth-child(1) .pudełko .zawartosc h3 {
+    color: var(--secondary-color);
 }
 
 .kontener .karta:nth-child(2) .pudełko .zawartosc a,
@@ -96,19 +101,47 @@
     background: var(--primary-color);
 }
 
+.kontener .karta:nth-child(2) .pudełko .zawartosc h3 {
+    color: var(--primary-color);
+}
+
 .kontener .karta:nth-child(3) .pudełko .zawartosc a,
 .kontener .karta:nth-child(3) .pudełko .zawartosc .icon {
     background: var(--third-color);
+    
+}
+
+.kontener .karta:nth-child(3) .pudełko .zawartosc h3 {
+    color: var(--third-color);
 }
 
 .kontener .karta:nth-child(4) .pudełko .zawartosc a,
 .kontener .karta:nth-child(4) .pudełko .zawartosc .icon {
     background: var(--color_4);
+    
+}
+
+.kontener .karta:nth-child(4) .pudełko .zawartosc h3 {
+    color: var(--color_4);
 }
 
 .kontener .karta:nth-child(5) .pudełko .zawartosc a,
 .kontener .karta:nth-child(5) .pudełko .zawartosc .icon {
     background: var(--color_5);
+    
+}
+
+.kontener .karta:nth-child(5) .pudełko .zawartosc h3 {
+    color: var(--color_5);
+}
+
+.kontener .karta:nth-child(6) .pudełko .zawartosc a,
+.kontener .karta:nth-child(6) .pudełko .zawartosc .icon {
+    background: var(--color_6);
+}
+
+.kontener .karta:nth-child(6) .pudełko .zawartosc h3 {
+    color: var(--color_6);
 }
 
 .accordion {

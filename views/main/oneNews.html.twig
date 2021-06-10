@@ -2,16 +2,16 @@
 
 {% block body %}
     <div class="profile">
-        <div class="info">
-            <h3>{{ news.title }}</h3>
-            <p>{{ news.description }}</p><br />
-            <p>Autor: {{ author.name }}</p><br />
-            {% if news.path != "" %}
-                <br />
-                <br />
-                <a href="{{ news.path }}">Przejdź pod url</a>
-            {% endif %}
-        </div>
+            <div class="info">
+                <div class="main_cont six">
+                    <h3>{{ news.title }}</h3>
+                    <p>{{ news.description }}</p><br />
+                    <p>Autor: {{ author.name }}</p><br />
+                    {% if news.path != "" %}
+                        <a href="{{ news.path }}">Wróć do aktualności</a>
+                    {% endif %}
+                </div>
+            </div>
     </div>
 {% endblock body %}
 

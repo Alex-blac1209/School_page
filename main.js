@@ -129,6 +129,10 @@ app.get("/for_all_documents", (request, response) => {
     response.render("main/for_all_documents.html.twig");
 });
 
+app.get("/exam_documents", (request, response) => {
+    response.render("main/exam_documents.html.twig");
+});
+
 
 //News page 
 

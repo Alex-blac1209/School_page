@@ -42,6 +42,20 @@
     padding-bottom: 1rem;
 }
 
+.profile .info .main_cont.six {
+    padding-left: 0;
+    padding-bottom: 1rem;
+}
+
+.profile .info .main_cont.six{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
 .profile .info .main_cont h3 {
     color: var(--white);
     text-transform: uppercase;
@@ -70,6 +84,21 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 0;
+}
+
+.profile .info .main_cont.six a {
+    background: none;
+    border-radius: 15px;
+    color: var(--white);
+    padding: 10px 15px;
+    padding-top: 15px;
+}
+
+.profile .info .main_cont.six a:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    background-color: rgba(27, 114, 212, 0.644);
+    color: var(--color_4);
 }
 
 .profile .info .main_cont.two a {
@@ -117,6 +146,27 @@
     color: var(--white);
 }
 
+.profile .info .main_cont.six p {
+    font-size: 1.5rem;
+    box-shadow:  inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.profile .info .main_cont.six p:nth-of-type(1) {
+    padding: 10px 100px;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+.profile .info .main_cont.six p:nth-of-type(2) {
+    padding: 5px 100px;
+    padding-top: 10px;
+}
+
 .profile .info .main_cont.three .us_inf span {
     text-transform: uppercase;
     font-weight: 500;
@@ -161,5 +211,9 @@
 
     .profile .info .main_cont.four p {
         font-size: 0.9rem;
+    }
+
+    .profile .info .main_cont.six {
+        padding: 10px;
     }
 }

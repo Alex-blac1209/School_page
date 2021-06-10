@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block title %} Egzaminy {% endblock title %}
+{% block css %}<link rel="stylesheet" type="text/css" href="/styles/exams.css" />{% endblock css %}
 {% block body %}
     <div class="banner">
         <div class="banner_container row">
@@ -11,7 +12,7 @@
         </div>
         <div class="main_content row">
             <div class="text col-md-12 col-lg-6 d-flex justify-content-center align-items-center" style="flex-direction:column; flex-wrap:wrap;">
-                <h1>EGZAMINY ORAZ CO MUSISZ O NICH WIEDZIEĆ</h1>
+                <h1>EGZAMINY, CO MUSISZ O NICH WIEDZIEĆ?</h1>
                 <p>Egzaminy, czyli szczegółowe informacje na temat egzaminów potwierdzających kwalifikacje w zawodzie. Najbliższe sesje egzaminacyjne, godziny i terminy.</p>
             </div>
             <img class="col-md-12 col-lg-6" src="images/undraw_exams_g4ow.svg" alt="główne zdj">
@@ -21,10 +22,68 @@
 
 
     <div class="informations">
-        <div class="custom-shape-divider-top-1619165810">
+        <div class="custom-shape-divider-top-1619165810" style="padding-bottom: 0rem;">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
+        </div>
+        <h2 class="pb-0 pt-5 text-center display-5"><span style="color: var(--primary-color);">INFORMACJE</span> O EGZAMINACH</h2>
+        <div class="exams">
+            <div class="kon">
+                <div class="card">
+                    <div class="icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Najbliższa sesja egzaminacyjna </h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>Najbliższa sesja egzaminacyjna – Lato (czerwiec lipiec 2021)</li>
+                            <li style="font-weight: 600; color: var(--primary-color);">22 czerwca 2021 – 8 lipca 2021</li>
+                        </ul>
+                    </div>
+                    <a class="more"></a>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Harmonogram egzaminów E.13 i E.14 (sesja letnia) </h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>Harmonogram egzaminów z kwalifikacji E.13 i E.14 w sesji letniej:</li>
+                            <li style="font-weight: 600; color: var(--primary-color);">E.13 pisemny:  22.06.2021 r, godz. 12.00, sala 101 (1 zdający)</li>
+                            <li style="font-weight: 600; color: var(--primary-color);">E.13 praktyczny:  28.06.2021 r., godz. 8.00, sala 257 (3 zdających)</li>
+                            <li style="font-weight: 600; color: var(--primary-color);">E.14 praktyczny:  25.06.2021 r., godz. 8.00, sala 246 (3 zdających)</li>
+                            <li>Prosimy o przybycie pod salę na 20 minut przed godziną rozpoczęcia egzaminu.</li>
+                            
+                        </ul>
+                    </div>
+                    <a class="more"></a>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="content">
+                        <h3> Egzaminacyjne konta uczniowskie</h3>
+                        <p>Szczegółowe informacje dot. egzaminów potwierdzających kwalifikacje w zawodzie można uzyskać po zalogowaniu na <a href="https://epkz.cke.edu.pl/" target="_blank" style="color: var(--primary-color);font-weight:500;">uczniowskie konto egzaminacyjne SIOEPKZ.</a></p>
+                    </div>
+                    <a class="more"></a>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Dokumenty</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>Jeśli chcesz uzyskać potrzebne Ci dokumenty lub informacje na temat egzaminu, kliknij w link poniżej</li>
+                            <li style="font-weight: 600; color: var(--primary-color); text-transform: uppercase;"><a href="/exam_documents" target="_blank">Dokumenty</a></li>
+                        </ul>
+                    </div>
+                    <a class="more"></a>
+                </div>
+            </div>
         </div>
         <div class="custom-shape-divider-bottom-1619073916">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
