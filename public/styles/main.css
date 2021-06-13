@@ -501,7 +501,6 @@ body > * {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-left: 10rem;
 }
 
 .stats .kont .cardi .face.face1 h3 {
@@ -509,6 +508,7 @@ body > * {
     color: var(--white);
     text-transform: uppercase;
     font-weight: 300;
+    text-align: center;
     font-size: 1.5em;
 }
 
@@ -551,6 +551,13 @@ body > * {
     background: var(--primary-color);
     color: var(--white);
     transition: all 0.3s ease;
+}
+
+.stats .kont .cardi .face.face1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sekcja {
