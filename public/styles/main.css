@@ -665,7 +665,7 @@ body > * {
 .contact .wier .form_container {
     width: 50%;
     text-align: left;
-    padding: 0 5rem;
+    padding: 0 auto;
     color: var(--white);
 }
 
@@ -1332,6 +1332,18 @@ footer i:hover {
     .statistics {
         min-height: 60vh;
     }
+
+    .stats .kont .cardi .face{
+        width: 100%;
+    }
+
+    .informations .kon .card {
+        padding: 0;
+    }
+
+    .informations .kon .card.one {
+        padding-left: 0rem;
+    }
 }
 
 
@@ -1365,8 +1377,22 @@ footer i:hover {
         padding-bottom: 3rem;
     } 
 
+    .stats {
+       margin: 0;
+    }
+
     .stats .heading {
         font-size: 2rem;
+    }
+
+    .stats .kont {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+    .stats .kont .cardi .face{
+        width: 100%;
     }
 
     .sekcja {
